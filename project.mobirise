@@ -1,7 +1,7 @@
 {
   "settings": {
     "name": "wootz",
-    "currentPage": "index.html",
+    "currentPage": "info.html",
     "theme": {
       "name": "mobirise4",
       "title": "Mobirise 4",
@@ -2157,9 +2157,9 @@
         }
       ]
     },
-    "page1.html": {
+    "info.html": {
       "settings": {
-        "meta_descr": "Web Page Creator Description",
+        "meta_descr": "",
         "title": "info",
         "order": 1
       },
