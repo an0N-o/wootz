@@ -1639,7 +1639,7 @@ body {
 }
 @media (min-width: 992px) {
   .cid-rnqGQYlYuP .collapsed:not(.navbar-short) .navbar-collapse {
-    max-height: calc(98.5vh - 4.6rem);
+    max-height: calc(98.5vh - 3.8rem);
   }
 }
 .cid-rnqGQYlYuP .collapsed button.navbar-toggler {
@@ -3066,7 +3066,7 @@ body {
 }
 @media (min-width: 992px) {
   .cid-rngjLNopSc .collapsed:not(.navbar-short) .navbar-collapse {
-    max-height: calc(98.5vh - 4.6rem);
+    max-height: calc(98.5vh - 3.8rem);
   }
 }
 .cid-rngjLNopSc .collapsed button.navbar-toggler {
