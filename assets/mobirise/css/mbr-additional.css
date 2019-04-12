@@ -2822,22 +2822,22 @@ body {
 .cid-rngsuE901C P {
   color: #232323;
 }
-.cid-rngsrG2Vek {
+.cid-rnqUfpuJWS {
   padding-top: 0px;
   padding-bottom: 30px;
   background-color: #cccccc;
 }
-.cid-rngsrG2Vek .media-container-row .mbr-text {
+.cid-rnqUfpuJWS .media-container-row .mbr-text {
   color: #3c3c3c;
 }
 .cid-rngjLNopSc .navbar {
-  background: #efefef;
+  background: #ffffff;
   transition: none;
   min-height: 77px;
   padding: .5rem 0;
 }
 .cid-rngjLNopSc .navbar-dropdown.bg-color.transparent.opened {
-  background: #efefef;
+  background: #ffffff;
 }
 .cid-rngjLNopSc a {
   font-style: normal;
@@ -2928,7 +2928,7 @@ body {
   padding-bottom: 0;
 }
 .cid-rngjLNopSc .dropdown .dropdown-menu {
-  background: #efefef;
+  background: #ffffff;
   display: none;
   position: absolute;
   min-width: 5rem;
@@ -2999,7 +2999,7 @@ body {
   width: 30px;
   height: 2px;
   border-right: 5px;
-  background-color: #000000;
+  background-color: #232323;
 }
 .cid-rngjLNopSc button.navbar-toggler .hamburger span:nth-child(1) {
   top: 0;
@@ -3227,7 +3227,7 @@ body {
 }
 .cid-rngjLNopSc .nav-link:hover,
 .cid-rngjLNopSc .dropdown-item:hover {
-  color: #072e41 !important;
+  color: #767676 !important;
 }
 .cid-rnkCzSEsAc {
   padding-top: 90px;
@@ -3372,7 +3372,7 @@ body {
 .cid-rngsrG2Vek {
   padding-top: 0px;
   padding-bottom: 30px;
-  background-color: #474747;
+  background-color: #cccccc;
 }
 .cid-rngsrG2Vek .media-container-row .mbr-text {
   color: #3c3c3c;
