@@ -1395,13 +1395,13 @@ body {
   border-top-color: #149dcc;
 }
 .cid-rngjLNopSc .navbar {
-  background: #ffffff;
+  background: #efefef;
   transition: none;
   min-height: 77px;
   padding: .5rem 0;
 }
 .cid-rngjLNopSc .navbar-dropdown.bg-color.transparent.opened {
-  background: #ffffff;
+  background: #efefef;
 }
 .cid-rngjLNopSc a {
   font-style: normal;
@@ -1492,7 +1492,7 @@ body {
   padding-bottom: 0;
 }
 .cid-rngjLNopSc .dropdown .dropdown-menu {
-  background: #ffffff;
+  background: #efefef;
   display: none;
   position: absolute;
   min-width: 5rem;
@@ -2181,7 +2181,7 @@ body {
 .cid-rnh8SF2822 {
   padding-top: 60px;
   padding-bottom: 0px;
-  background-color: #f4f4f4;
+  background-color: #efefef;
 }
 .cid-rnh8SF2822 .line {
   background-color: #149dcc;
@@ -2204,7 +2204,7 @@ body {
 .cid-rnh8TX2u8M {
   padding-top: 30px;
   padding-bottom: 45px;
-  background-color: #f4f4f4;
+  background-color: #efefef;
 }
 .cid-rnh8TX2u8M .counter-container {
   color: #767676;
@@ -2236,6 +2236,7 @@ body {
 }
 .cid-rnh8TX2u8M .mbr-text UL {
   text-align: left;
+  color: #424242;
 }
 .cid-rnhnwM2OwY {
   padding-top: 60px;
@@ -2489,7 +2490,7 @@ body {
 .cid-rnhi4fbXJ2 {
   padding-top: 0px;
   padding-bottom: 135px;
-  background-color: #ffffff;
+  background-color: #efefef;
 }
 .cid-rnhi4fbXJ2 .mbr-slider .carousel-control {
   background: #1b1b1b;
@@ -2597,15 +2598,15 @@ body {
 .cid-rnhsQ0FMBK {
   padding-top: 60px;
   padding-bottom: 0px;
-  background-color: #ffffff;
+  background-color: #efefef;
 }
 .cid-rnhsQ0FMBK .mbr-section-subtitle {
   color: #767676;
 }
 .cid-rnhsBVYZFk {
   padding-top: 0px;
-  padding-bottom: 0px;
-  background-color: #ffffff;
+  padding-bottom: 15px;
+  background-color: #efefef;
 }
 .cid-rnhsBVYZFk .mbr-text,
 .cid-rnhsBVYZFk blockquote {
@@ -2613,8 +2614,8 @@ body {
 }
 .cid-rnhsK29FrK {
   padding-top: 0px;
-  padding-bottom: 0px;
-  background-color: #ffffff;
+  padding-bottom: 30px;
+  background-color: #efefef;
 }
 .cid-rnhsK29FrK .mbr-text,
 .cid-rnhsK29FrK blockquote {
@@ -2703,7 +2704,7 @@ body {
 .cid-rngsGAajAo {
   padding-top: 90px;
   padding-bottom: 90px;
-  background-color: #cccccc;
+  background-image: url("../../../assets/images/mbr-1920x1281.jpg");
 }
 .cid-rngsGAajAo .title {
   margin-bottom: 2rem;
