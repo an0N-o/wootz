@@ -1,5 +1,5 @@
 @import url(https://fonts.googleapis.com/css?family=Rubik:300,300i,400,400i,500,500i,700,700i,900,900i);
-@import url(https://fonts.googleapis.com/css?family=Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i);
+@import url(https://fonts.googleapis.com/css?family=Varela+Round:400);
 
 
 
@@ -35,14 +35,14 @@ body {
   font-size: 4.8rem;
 }
 .display-4 {
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Varela Round', sans-serif;
   font-size: 1rem;
 }
 .display-4 > .mbr-iconfont {
   font-size: 1.6rem;
 }
 .display-5 {
-  font-family: 'Rubik', sans-serif;
+  font-family: 'Varela Round', sans-serif;
   font-size: 1.5rem;
 }
 .display-5 > .mbr-iconfont {
@@ -1837,8 +1837,17 @@ body {
 .cid-rngKnrPmaz .mbr-text {
   text-align: center;
 }
+.cid-rnJq9pTPPa {
+  padding-top: 60px;
+  padding-bottom: 0px;
+  background-color: #ffffff;
+}
+.cid-rnJq9pTPPa .mbr-text,
+.cid-rnJq9pTPPa blockquote {
+  color: #767676;
+}
 .cid-rngOqZajXX {
-  padding-top: 90px;
+  padding-top: 30px;
   padding-bottom: 90px;
   background-color: #ffffff;
 }
@@ -1948,7 +1957,7 @@ body {
   }
 }
 .cid-rngXqyKXBU {
-  padding-top: 120px;
+  padding-top: 60px;
   padding-bottom: 60px;
   background-image: url("../../../assets/images/bg-1-1600x900.jpg");
 }
@@ -2139,10 +2148,13 @@ body {
   line-height: 20px;
   transition: all .2s;
   color: #ffffff;
-  background: #149dcc;
+  background: #006a85;
   width: 25px;
   height: 25px;
   border-radius: 50%;
+  background: none;
+  border: 1px solid #006a85;
+  color: #006a85;
   content: '✓';
 }
 .cid-rnh8TX2u8M .mbr-text UL {
@@ -2461,50 +2473,27 @@ body {
   background: linear-gradient(to left, #554346, #45505b) !important;
 }
 .cid-rnhqlIjl1q {
-  padding-top: 105px;
+  padding-top: 75px;
   padding-bottom: 45px;
   background-image: url("../../../assets/images/about-1534x538.jpg");
 }
-.cid-rnhpNSWmfn {
-  padding-top: 90px;
-  padding-bottom: 90px;
+.cid-rnJnr7IiGI {
+  padding-top: 60px;
+  padding-bottom: 60px;
   background-color: #ffffff;
 }
-.cid-rnhpNSWmfn .mbr-section-subtitle {
+.cid-rnJnr7IiGI .mbr-text,
+.cid-rnJnr7IiGI blockquote {
   color: #767676;
+}
+.cid-rnJnr7IiGI .mbr-text P {
   text-align: center;
+  color: #2a2a2a;
 }
-.cid-rnhpNSWmfn .media-row {
-  display: -webkit-flex;
-  justify-content: center;
-  -webkit-justify-content: center;
-}
-.cid-rnhpNSWmfn .team-item {
-  transition: all .2s;
-  margin-bottom: 2rem;
-}
-.cid-rnhpNSWmfn .team-item .item-image img {
-  width: 100%;
-}
-.cid-rnhpNSWmfn .team-item .item-name p {
-  margin-bottom: 0;
-}
-.cid-rnhpNSWmfn .team-item .item-role p {
-  margin-bottom: 0;
-}
-.cid-rnhpNSWmfn .team-item .item-social {
-  display: -webkit-flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  -webkit-flex-wrap: wrap;
-  -webkit-justify-content: center;
-}
-.cid-rnhpNSWmfn .team-item .item-social .socicon {
-  color: #232323;
-  font-size: 17px;
-}
-.cid-rnhpNSWmfn .team-item .item-caption {
-  background: #efefef;
+.cid-rnJrRtc1pJ {
+  padding-top: 120px;
+  padding-bottom: 120px;
+  background-image: url("../../../assets/images/about.jpg");
 }
 .cid-rnhsQ0FMBK {
   padding-top: 60px;
@@ -2744,13 +2733,13 @@ body {
   color: #3c3c3c;
 }
 .cid-rngjLNopSc .navbar {
-  background: #ffffff;
+  background: #efefef;
   transition: none;
   min-height: 77px;
   padding: .5rem 0;
 }
 .cid-rngjLNopSc .navbar-dropdown.bg-color.transparent.opened {
-  background: #ffffff;
+  background: #efefef;
 }
 .cid-rngjLNopSc a {
   font-style: normal;
@@ -2841,7 +2830,7 @@ body {
   padding-bottom: 0;
 }
 .cid-rngjLNopSc .dropdown .dropdown-menu {
-  background: #ffffff;
+  background: #efefef;
   display: none;
   position: absolute;
   min-width: 5rem;
@@ -2912,7 +2901,7 @@ body {
   width: 30px;
   height: 2px;
   border-right: 5px;
-  background-color: #232323;
+  background-color: #000000;
 }
 .cid-rngjLNopSc button.navbar-toggler .hamburger span:nth-child(1) {
   top: 0;
@@ -3140,7 +3129,7 @@ body {
 }
 .cid-rngjLNopSc .nav-link:hover,
 .cid-rngjLNopSc .dropdown-item:hover {
-  color: #767676 !important;
+  color: #072e41 !important;
 }
 .cid-rnkCzSEsAc {
   padding-top: 90px;
