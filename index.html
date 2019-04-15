@@ -1,33 +1,211 @@
 <!DOCTYPE html>
 <html  >
-<head>
-  <!-- Site made with Mobirise Website Builder v4.9.7, https://mobirise.com -->
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="generator" content="Mobirise v4.9.7, mobirise.com">
-  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
-  <link rel="shortcut icon" href="assets/images/fav-128x126.png" type="image/x-icon">
-  <meta name="description" content="">
-  
-  <title>Wootz BuildSys</title>
-  <link rel="stylesheet" href="assets/web/assets/mobirise-icons-bold/mobirise-icons-bold.css">
-  <link rel="stylesheet" href="assets/web/assets/mobirise-icons/mobirise-icons.css">
-  <link rel="stylesheet" href="assets/tether/tether.min.css">
-  <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
-  <link rel="stylesheet" href="assets/bootstrap/css/bootstrap-grid.min.css">
-  <link rel="stylesheet" href="assets/bootstrap/css/bootstrap-reboot.min.css">
-  <link rel="stylesheet" href="assets/dropdown/css/style.css">
-  <link rel="stylesheet" href="assets/animatecss/animate.min.css">
-  <link rel="stylesheet" href="assets/socicon/css/styles.css">
-  <link rel="stylesheet" href="assets/theme/css/style.css">
-  <link rel="stylesheet" href="assets/gallery/style.css">
-  <link rel="stylesheet" href="assets/mobirise/css/mbr-additional.css" type="text/css">
-  
-  
-  
-</head>
-<body>
 
+
+<head>
+<!--
+
+
+
+
+             `@@       `@@+       @@'                               `                       @@@@@@@@#'                    ,@#   @@            @@
+              @@`      +@@@       @@.                             `@.                       @@@@@@@@@@@.                  ,@#   @@            @@
+              @@;      @@@@       @@                              #@.                       @@@::::;#@@@                  ,@#   @@            @@
+              +@#      @@#@,     .@@                              #@.                       @@#      `@@'                       @@            @@
+              .@@     .@#,@@     #@#                              #@.                       @@#       +@@                       @@            @@
+               @@     ;@; @@     @@.     `'+:          .'+:       #@.                       @@#       .@@                       @@       ;+,  @@      ,++,                     :+',
+               @@`    @@  @@     @@     @@@@@@+      `@@@@@@'   ,@@@@@+ @@@@@@@@@@@         @@#       ,@@   .@#      @@`  ,@#   @@     '@@@@@ @@    ;@@@@@@:   @@.      #@,  ;@@@@@@,
+               #@:    @@  @@,   `@@    @@@#;@@@+    `@@@+;@@@'  ,@@@@@+ @@@@@@@@@@'         @@#       @@+   .@#      @@`  ,@#   @@    '@@@;#@@@@   `@@@;'@@@.  #@#      @@  ,@@@;'@@@`
+               :@@    @@  :@+   :@+   @@@    ,@@.   @@@    ;@@`   #@.          #@@          @@#      '@@    .@#      @@`  ,@#   @@    @@;   .@@@   @@:    #@@  .@@     .@@  @@,    @@+
+                @@   ;@;  `@@   +@:   @@`     +@@  `@@      #@#   #@.         :@@           @@@@@@@@@@@`    .@#      @@`  ,@#   @@   '@@     +@@   @@      @@   @@.    #@:  @@     .@@
+                @@   #@`   @@   @@   ;@@       @@  #@#      `@@   #@.        `@@,           @@@@@@@@@@@:    .@#      @@`  ,@#   @@   @@,      @@   @@'          +@+    @@   @@:
+                @@`  @@    #@`  @@   #@+       @@  @@:       @@   #@.        @@+            @@#,,,,,;@@@+   .@#      @@`  ,@#   @@   @@`      @@   +@@@:        .@@   `@@   #@@@:
+                ;@; `@@    '@+  @@   @@:       @@` @@.       @@   #@.       #@@             @@#       ;@@`  .@#      @@`  ,@#   @@   @@       @@    @@@@@@:      @@   +@:    @@@@@@:
+                .@+ :@'     @@ ;@:   @@:       @@. @@.       @@   #@.      ,@@`             @@#        @@+  .@#      @@`  ,@#   @@   @@       @@     ;@@@@@@.    @@'  @@      ;@@@@@@`
+                 @@ @@`     @@ #@`   @@:       @@  @@.       @@   #@.      @@;              @@#        +@@  .@#      @@`  ,@#   @@   @@       @@        '@@@@    .@@ `@@         '@@@@
+                 @@ @@      @@ @@    #@#       @@  @@;       @@   #@.     @@@               @@#        +@@  .@@      @@`  ,@#   @@   @@`      @@          `@@.    @@ ;@'           .@@`
+                 +@`@@      '@.@@    ,@@      .@@  ;@@      :@@   #@.    #@@                @@#        @@+  .@@     `@@`  ,@#   @@   #@+      @@  `@@      @@,    #@,@@    .@@      @@`
+                 ,@:@+      .@+@'     @@,     @@#  `@@.     @@'   #@.   ,@@`                @@#       :@@.  `@@     #@@`  ,@#   @@   .@@     #@@   @@      @@.    .@#@@     @@`     @@`
+                  @@@.       @@@.     +@@.   #@@`   #@@`   @@@    #@+  `@@' ```````         @@#,,,,,;@@@@    @@@   +@@@`  ,@#   @@    @@@   ;@@@   @@@    '@@      @@@'     #@@    +@@
+                  @@@        @@@       @@@@@@@@:     @@@@@@@@.    '@@@@,@@@@@@@@@@@         @@@@@@@@@@@@     ;@@@@@@+#@`  ,@#   @@    `@@@@@@@@@    @@@@@@@@,      @@@`      @@@@@@@@.
+                  @@@        #@@        +@@@@@`       #@@@@#`      @@@@,@@@@@@@@@@@         @@@@@@@@@#,       ;@@@@' #@`  ,@#   @@      @@@@# @@     #@@@@@.       ,@@       `#@@@@@`
+                                                                                                                                                                   ,@+
+                                                                                                                                                                   @@
+                                                                                                                                                                   @@
+                                                                                                                                                               `:;@@:
+                                                                                                                                                                @@@@
+                                                                                                                                                                #@+
+
+
+
+                                       ,,,,.                .                             .                   .,,,,
+                                      .+''':               ,+                            ,+                   '+'''         `.
+                                      .+                                                                      ';            ,+
+                                      .+     ..`,.    ,,,, `,  , .,     ,,     ,,`   , , `,  , .,    .,,,.    ';     ,   , .;+,` ,   ,` `.`,   ,,
+                                      .+     :'+;+,  +';+; `+  +''++   +;;+   +';+`  '+' .+  ++'++  :+;+',    ';    `+   + ,'+;. +   +. ,'+' `+;'+
+                                      .++++  :+  ,+ `+  ', `+  +,  +` ',  ;; ;;  ,+  +`  .+  +,  +  +`  +     '';;; `+   +  ,+   +   +. ,+   +`  +,
+                                      .+     :;  `+ `+  ', `+  +   +` +;;;;' +;;;;+  +   .+  +   +  +`  +     '',,, `+   +  ,+   +   +. ,+   +;;;';
+                                      .+     :;  `+  +';+  `+  +   +` +,,,,. +:,,,,  +   .+  +   +  ;+;+:     ';    `+   +  ,+   +   +. ,+   +,,,,.
+                                      .+     :;  `+ ,;.,   `+  +   +` +`     +.      +   .+  +   +  +`,.      ';    `+   +  ,+   +   +. ,+   +
+                                      .+     :;  `+ .+:,,  `+  +   +` ;'  `. ,+   :  +   .+  +   +  +;:,`     ';     +` '+  .+   +: :+. ,+   +;  .`
+                                      .++++' :;  `+ `+:;++ `+  +   +`  '+++`  '+++.  +   .+  +   +  ';:;+.    ';     :++:+   ++: `++''. ,+    ++++
+                                                    ',   +                                         `+   ':
+                                                    ;'..;+                                          +,.,+`
+                                                     :++:                                           .'+'`
+
+-->
+
+
+<title> Wootz BuildSys | Engineering Future </title>
+<meta name="google-site-verification" content="pNMzP0VF6tVhO7rLUyIR7pfkEF2oWVheIrk929qkBZg" />
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="author" content="_an0N_">
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+<meta name="theme-color" content="#efefef">
+<meta name="description" content=" Wootz BuildSys is committed to delivering high quality projects and innovate design solutions using Pre Engineered Building technology along with other prefabricated & green materials">
+<meta name="keywords" content="wootz, wootz steel, Light Gauge Steel Frame, light gauge steel structure, LSFG, eco green buildings, light gage steel design software, house structure design, eco friendly building, roof structure design, prefab roof extension,  structural design for residential house, steel frame home extensions, steel framing system, pre engineered buildings, pre engineered steel structures, pre engineered steel buildings, pre engineered structures, pre engineered buildings, prefab buildings, prefabricated structures, Pre Engineered Building Design Service, PEB Design Service, Pre-fabricated Structure"/>
+<meta name="abstract" content="Wootz BuildSys is committed to delivering high quality projects and innovate design solutions">
+<meta name="robots" content="index, follow, noydir">
+<meta name="googlebot" content="index, follow">
+<meta name="bingbot" content="index, follow">
+<meta name="rating" content="general">
+<meta name="allow-search" content="yes">
+<meta name="revisit-after" content="1 days">
+<meta name="language" content="english">
+<meta name="copyright" content="Wootz BuildSys">
+<meta name="distribution" content="global">
+<meta name="expires" content="never">
+
+
+
+
+<link rel="stylesheet" href="assets/web/assets/mobirise-icons-bold/mobirise-icons-bold.css">
+<link rel="stylesheet" href="assets/web/assets/mobirise-icons/mobirise-icons.css">
+<link rel="stylesheet" href="assets/tether/tether.min.css">
+<link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+<link rel="stylesheet" href="assets/bootstrap/css/bootstrap-grid.min.css">
+<link rel="stylesheet" href="assets/bootstrap/css/bootstrap-reboot.min.css">
+<link rel="stylesheet" href="assets/dropdown/css/style.css">
+<link rel="stylesheet" href="assets/animatecss/animate.min.css">
+<link rel="stylesheet" href="assets/socicon/css/styles.css">
+<link rel="stylesheet" href="assets/theme/css/style.css">
+<link rel="stylesheet" href="assets/gallery/style.css">
+<link rel="stylesheet" href="assets/mobirise/css/mbr-additional.css" type="text/css">
+<link rel="shortcut icon" href="assets/images/fav-128x126.png" type="image/x-icon">
+
+
+
+  <script type="text/javascript">window.$crisp=[];window.CRISP_WEBSITE_ID="94c2186b-c766-4d33-a63d-e250d32bf861";(function(){d=document;s=d.createElement("script");s.src="https://client.crisp.chat/l.js";s.async=1;d.getElementsByTagName("head")[0].appendChild(s);})();</script>
+
+
+
+  <style>
+      .sk-cube-grid {
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    top: 45%;
+    left: 45%;
+  }
+  .sk-cube-grid .sk-cube {
+    width: 33%;
+    height: 33%;
+    background-color: #00bcc9;
+    float: left;
+    -webkit-animation: sk-cubeGridScaleDelay 1.3s infinite ease-in-out;
+            animation: sk-cubeGridScaleDelay 1.3s infinite ease-in-out;
+  }
+  .sk-cube-grid .sk-cube1 {
+    -webkit-animation-delay: 0.2s;
+            animation-delay: 0.2s; }
+  .sk-cube-grid .sk-cube2 {
+    -webkit-animation-delay: 0.3s;
+            animation-delay: 0.3s; }
+  .sk-cube-grid .sk-cube3 {
+    -webkit-animation-delay: 0.4s;
+            animation-delay: 0.4s; }
+  .sk-cube-grid .sk-cube4 {
+    -webkit-animation-delay: 0.1s;
+            animation-delay: 0.1s; }
+  .sk-cube-grid .sk-cube5 {
+    -webkit-animation-delay: 0.2s;
+            animation-delay: 0.2s; }
+  .sk-cube-grid .sk-cube6 {
+    -webkit-animation-delay: 0.3s;
+            animation-delay: 0.3s; }
+  .sk-cube-grid .sk-cube7 {
+    -webkit-animation-delay: 0s;
+            animation-delay: 0s; }
+  .sk-cube-grid .sk-cube8 {
+    -webkit-animation-delay: 0.1s;
+            animation-delay: 0.1s; }
+  .sk-cube-grid .sk-cube9 {
+    -webkit-animation-delay: 0.2s;
+            animation-delay: 0.2s; }
+  @-webkit-keyframes sk-cubeGridScaleDelay {
+    0%, 70%, 100% {
+      -webkit-transform: scale3D(1, 1, 1);
+              transform: scale3D(1, 1, 1);
+    } 35% {
+      -webkit-transform: scale3D(0, 0, 1);
+              transform: scale3D(0, 0, 1);
+    }
+  }
+  @keyframes sk-cubeGridScaleDelay {
+    0%, 70%, 100% {
+      -webkit-transform: scale3D(1, 1, 1);
+              transform: scale3D(1, 1, 1);
+    } 35% {
+      -webkit-transform: scale3D(0, 0, 1);
+              transform: scale3D(0, 0, 1);
+    }
+  }
+  .spinner-wrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #efefef;
+  z-index: 999999;
+  }
+    </style>
+
+  </head>
+  <body>
+
+<!-- preLoader -->
+  <div class="spinner-wrapper">
+  <div class="spinner">
+  <!-- preLoader -->
+  <div class="sk-cube-grid">
+    <div class="sk-cube sk-cube1"></div>
+    <div class="sk-cube sk-cube2"></div>
+    <div class="sk-cube sk-cube3"></div>
+    <div class="sk-cube sk-cube4"></div>
+    <div class="sk-cube sk-cube5"></div>
+    <div class="sk-cube sk-cube6"></div>
+    <div class="sk-cube sk-cube7"></div>
+    <div class="sk-cube sk-cube8"></div>
+    <div class="sk-cube sk-cube9"></div>
+  </div>
+  </div>
+  </div>
+<!-- preLoader -->    
+  <script>
+  $(document).ready(function() {
+  //Preloader
+  $(window).on("load", function() {
+  preloaderFadeOutTime = 500;
+  function hidePreloader() {
+  var preloader = $('.spinner-wrapper');
+  preloader.fadeOut(preloaderFadeOutTime);
+  }
+  hidePreloader();
+  });
+  });
+  </script>
 <!-- Google Analytics -->
 <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-138234610-1"></script>
@@ -766,7 +944,7 @@
             <div class="col-12 col-md-3">
                 <div class="media-wrap">
                     <a href="https://www.wootz.in/">
-                        <img src="assets/images/logo-final-png-278x240.png" alt="logo" title="">
+                        <img src="assets/images/logo-final-png-278x240.png" alt="logo"  style="height:160px;">
                     </a>
                 </div>
             </div>
