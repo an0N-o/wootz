@@ -192,20 +192,7 @@
   </div>
   </div>
   </div>
-<!-- preLoader -->    
-  <script>
-  $(document).ready(function() {
-  //Preloader
-  $(window).on("load", function() {
-  preloaderFadeOutTime = 500;
-  function hidePreloader() {
-  var preloader = $('.spinner-wrapper');
-  preloader.fadeOut(preloaderFadeOutTime);
-  }
-  hidePreloader();
-  });
-  });
-  </script>
+
 <!-- Google Analytics -->
 <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-138234610-1"></script>
@@ -1040,7 +1027,20 @@
   <script src="assets/gallery/script.js"></script>
   <script src="assets/slidervideo/script.js"></script>
   <script src="assets/formoid/formoid.min.js"></script>
-  
+  <!-- preLoader -->    
+  <script>
+  $(document).ready(function() {
+  //Preloader
+  $(window).on("load", function() {
+  preloaderFadeOutTime = 500;
+  function hidePreloader() {
+  var preloader = $('.spinner-wrapper');
+  preloader.fadeOut(preloaderFadeOutTime);
+  }
+  hidePreloader();
+  });
+  });
+  </script>
   
  <div id="scrollToTop" class="scrollToTop mbr-arrow-up"><a style="text-align: center;"><i class="mbr-arrow-up-icon mbr-arrow-up-icon-cm cm-icon cm-icon-smallarrow-up"></i></a></div>
     <input name="animation" type="hidden">
