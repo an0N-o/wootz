@@ -1,187 +1,116 @@
 <!DOCTYPE html>
-<html  >
+<html>
 <head>
-  <!--                                                                                                                                                     
-                                                                                                                                                                                                        
-                                                                                                                                                                                                        
-                                                                                                                                                                                                        
-                                                                                                                                                                                                        
-               `@@       `@@+       @@'                               `                       @@@@@@@@#'                    ,@#   @@            @@                                                      
-                @@`      +@@@       @@.                             `@.                       @@@@@@@@@@@.                  ,@#   @@            @@                                                      
-                @@;      @@@@       @@                              #@.                       @@@::::;#@@@                  ,@#   @@            @@                                                      
-                +@#      @@#@,     .@@                              #@.                       @@#      `@@'                       @@            @@                                                      
-                .@@     .@#,@@     #@#                              #@.                       @@#       +@@                       @@            @@                                                      
-                 @@     ;@; @@     @@.     `'+:          .'+:       #@.                       @@#       .@@                       @@       ;+,  @@      ,++,                     :+',                   
-                 @@`    @@  @@     @@     @@@@@@+      `@@@@@@'   ,@@@@@+ @@@@@@@@@@@         @@#       ,@@   .@#      @@`  ,@#   @@     '@@@@@ @@    ;@@@@@@:   @@.      #@,  ;@@@@@@,                 
-                 #@:    @@  @@,   `@@    @@@#;@@@+    `@@@+;@@@'  ,@@@@@+ @@@@@@@@@@'         @@#       @@+   .@#      @@`  ,@#   @@    '@@@;#@@@@   `@@@;'@@@.  #@#      @@  ,@@@;'@@@`                
-                 :@@    @@  :@+   :@+   @@@    ,@@.   @@@    ;@@`   #@.          #@@          @@#      '@@    .@#      @@`  ,@#   @@    @@;   .@@@   @@:    #@@  .@@     .@@  @@,    @@+                
-                  @@   ;@;  `@@   +@:   @@`     +@@  `@@      #@#   #@.         :@@           @@@@@@@@@@@`    .@#      @@`  ,@#   @@   '@@     +@@   @@      @@   @@.    #@:  @@     .@@                
-                  @@   #@`   @@   @@   ;@@       @@  #@#      `@@   #@.        `@@,           @@@@@@@@@@@:    .@#      @@`  ,@#   @@   @@,      @@   @@'          +@+    @@   @@:                       
-                  @@`  @@    #@`  @@   #@+       @@  @@:       @@   #@.        @@+            @@#,,,,,;@@@+   .@#      @@`  ,@#   @@   @@`      @@   +@@@:        .@@   `@@   #@@@:                     
-                  ;@; `@@    '@+  @@   @@:       @@` @@.       @@   #@.       #@@             @@#       ;@@`  .@#      @@`  ,@#   @@   @@       @@    @@@@@@:      @@   +@:    @@@@@@:                  
-                  .@+ :@'     @@ ;@:   @@:       @@. @@.       @@   #@.      ,@@`             @@#        @@+  .@#      @@`  ,@#   @@   @@       @@     ;@@@@@@.    @@'  @@      ;@@@@@@`                
-                   @@ @@`     @@ #@`   @@:       @@  @@.       @@   #@.      @@;              @@#        +@@  .@#      @@`  ,@#   @@   @@       @@        '@@@@    .@@ `@@         '@@@@                
-                   @@ @@      @@ @@    #@#       @@  @@;       @@   #@.     @@@               @@#        +@@  .@@      @@`  ,@#   @@   @@`      @@          `@@.    @@ ;@'           .@@`               
-                   +@`@@      '@.@@    ,@@      .@@  ;@@      :@@   #@.    #@@                @@#        @@+  .@@     `@@`  ,@#   @@   #@+      @@  `@@      @@,    #@,@@    .@@      @@`               
-                   ,@:@+      .@+@'     @@,     @@#  `@@.     @@'   #@.   ,@@`                @@#       :@@.  `@@     #@@`  ,@#   @@   .@@     #@@   @@      @@.    .@#@@     @@`     @@`               
-                    @@@.       @@@.     +@@.   #@@`   #@@`   @@@    #@+  `@@' ```````         @@#,,,,,;@@@@    @@@   +@@@`  ,@#   @@    @@@   ;@@@   @@@    '@@      @@@'     #@@    +@@                
-                    @@@        @@@       @@@@@@@@:     @@@@@@@@.    '@@@@,@@@@@@@@@@@         @@@@@@@@@@@@     ;@@@@@@+#@`  ,@#   @@    `@@@@@@@@@    @@@@@@@@,      @@@`      @@@@@@@@.                
-                    @@@        #@@        +@@@@@`       #@@@@#`      @@@@,@@@@@@@@@@@         @@@@@@@@@#,       ;@@@@' #@`  ,@#   @@      @@@@# @@     #@@@@@.       ,@@       `#@@@@@`                 
-                                                                                                                                                                     ,@+                                
-                                                                                                                                                                     @@                                 
-                                                                                                                                                                     @@                                 
-                                                                                                                                                                 `:;@@:                                 
-                                                                                                                                                                  @@@@                                  
-                                                                                                                                                                  #@+                                   
-                                                                                                                                                                                                        
-                                                                                                                                                                                                        
-                                                                                                                                                                                                        
-                                         ,,,,.                .                             .                   .,,,,                                                                                   
-                                        .+''':               ,+                            ,+                   '+'''         `.                                                                        
-                                        .+                                                                      ';            ,+                                                                        
-                                        .+     ..`,.    ,,,, `,  , .,     ,,     ,,`   , , `,  , .,    .,,,.    ';     ,   , .;+,` ,   ,` `.`,   ,,                                                     
-                                        .+     :'+;+,  +';+; `+  +''++   +;;+   +';+`  '+' .+  ++'++  :+;+',    ';    `+   + ,'+;. +   +. ,'+' `+;'+                                                    
-                                        .++++  :+  ,+ `+  ', `+  +,  +` ',  ;; ;;  ,+  +`  .+  +,  +  +`  +     '';;; `+   +  ,+   +   +. ,+   +`  +,                                                   
-                                        .+     :;  `+ `+  ', `+  +   +` +;;;;' +;;;;+  +   .+  +   +  +`  +     '',,, `+   +  ,+   +   +. ,+   +;;;';                                                   
-                                        .+     :;  `+  +';+  `+  +   +` +,,,,. +:,,,,  +   .+  +   +  ;+;+:     ';    `+   +  ,+   +   +. ,+   +,,,,.                                                   
-                                        .+     :;  `+ ,;.,   `+  +   +` +`     +.      +   .+  +   +  +`,.      ';    `+   +  ,+   +   +. ,+   +                                                        
-                                        .+     :;  `+ .+:,,  `+  +   +` ;'  `. ,+   :  +   .+  +   +  +;:,`     ';     +` '+  .+   +: :+. ,+   +;  .`                                                   
-                                        .++++' :;  `+ `+:;++ `+  +   +`  '+++`  '+++.  +   .+  +   +  ';:;+.    ';     :++:+   ++: `++''. ,+    ++++                                                    
-                                                      ',   +                                         `+   ':                                                                                            
-                                                      ;'..;+                                          +,.,+`                                                                                            
-                                                       :++:                                           .'+'`                                                                                             
-                                                                                                                                                                                                        
-                                                                                                                                                                                                        
-                                                                                                                                                                                                        
-                                                                                                                                                                                                        
-                                                                                                                                                                                                        
-                                                                                                                                                                                                        
-                                                                                                                                                                                                        
-                                                                                                                                                                                                        
-                                                                                                                                                                                                        
-                                                                                                                                                                                                        
-                                                                                                                                                                                                        
- -->
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="generator" content="Mobirise v4.9.7, mobirise.com">
-  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
-  <link rel="shortcut icon" href="assets/images/logo-png-copy-176x121.png" type="image/x-icon">
-  <meta name="description" content="">
-
-  <title>Wootz BuildSys</title>
-  <link rel="stylesheet" href="assets/web/assets/mobirise-icons-bold/mobirise-icons-bold.css">
-  <link rel="stylesheet" href="assets/web/assets/mobirise-icons/mobirise-icons.css">
-  <link rel="stylesheet" href="assets/tether/tether.min.css">
-  <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
-  <link rel="stylesheet" href="assets/bootstrap/css/bootstrap-grid.min.css">
-  <link rel="stylesheet" href="assets/bootstrap/css/bootstrap-reboot.min.css">
-  <link rel="stylesheet" href="assets/dropdown/css/style.css">
-  <link rel="stylesheet" href="assets/animatecss/animate.min.css">
-  <link rel="stylesheet" href="assets/socicon/css/styles.css">
-  <link rel="stylesheet" href="assets/theme/css/style.css">
-  <link rel="stylesheet" href="assets/gallery/style.css">
-  <link rel="stylesheet" href="assets/mobirise/css/mbr-additional.css" type="text/css">
+<!--
 
 
-<style>
-/* preLoader */
-.sk-cube-grid {
-  width: 80px;
-  height: 80px;
-  margin: 320px auto;
-}
-.sk-cube-grid .sk-cube {
-  width: 33%;
-  height: 33%;
-  background-color: #00bcc9;
-  float: left;
-  -webkit-animation: sk-cubeGridScaleDelay 1.3s infinite ease-in-out;
-          animation: sk-cubeGridScaleDelay 1.3s infinite ease-in-out; 
-}
-.sk-cube-grid .sk-cube1 {
-  -webkit-animation-delay: 0.2s;
-          animation-delay: 0.2s; }
-.sk-cube-grid .sk-cube2 {
-  -webkit-animation-delay: 0.3s;
-          animation-delay: 0.3s; }
-.sk-cube-grid .sk-cube3 {
-  -webkit-animation-delay: 0.4s;
-          animation-delay: 0.4s; }
-.sk-cube-grid .sk-cube4 {
-  -webkit-animation-delay: 0.1s;
-          animation-delay: 0.1s; }
-.sk-cube-grid .sk-cube5 {
-  -webkit-animation-delay: 0.2s;
-          animation-delay: 0.2s; }
-.sk-cube-grid .sk-cube6 {
-  -webkit-animation-delay: 0.3s;
-          animation-delay: 0.3s; }
-.sk-cube-grid .sk-cube7 {
-  -webkit-animation-delay: 0s;
-          animation-delay: 0s; }
-.sk-cube-grid .sk-cube8 {
-  -webkit-animation-delay: 0.1s;
-          animation-delay: 0.1s; }
-.sk-cube-grid .sk-cube9 {
-  -webkit-animation-delay: 0.2s;
-          animation-delay: 0.2s; }
-@-webkit-keyframes sk-cubeGridScaleDelay {
-  0%, 70%, 100% {
-    -webkit-transform: scale3D(1, 1, 1);
-            transform: scale3D(1, 1, 1);
-  } 35% {
-    -webkit-transform: scale3D(0, 0, 1);
-            transform: scale3D(0, 0, 1); 
-  }
-}
-@keyframes sk-cubeGridScaleDelay {
-  0%, 70%, 100% {
-    -webkit-transform: scale3D(1, 1, 1);
-            transform: scale3D(1, 1, 1);
-  } 35% {
-    -webkit-transform: scale3D(0, 0, 1);
-            transform: scale3D(0, 0, 1);
-  } 
-}
-</style>
+
+
+             `@@       `@@+       @@'                               `                       @@@@@@@@#'                    ,@#   @@            @@
+              @@`      +@@@       @@.                             `@.                       @@@@@@@@@@@.                  ,@#   @@            @@
+              @@;      @@@@       @@                              #@.                       @@@::::;#@@@                  ,@#   @@            @@
+              +@#      @@#@,     .@@                              #@.                       @@#      `@@'                       @@            @@
+              .@@     .@#,@@     #@#                              #@.                       @@#       +@@                       @@            @@
+               @@     ;@; @@     @@.     `'+:          .'+:       #@.                       @@#       .@@                       @@       ;+,  @@      ,++,                     :+',
+               @@`    @@  @@     @@     @@@@@@+      `@@@@@@'   ,@@@@@+ @@@@@@@@@@@         @@#       ,@@   .@#      @@`  ,@#   @@     '@@@@@ @@    ;@@@@@@:   @@.      #@,  ;@@@@@@,
+               #@:    @@  @@,   `@@    @@@#;@@@+    `@@@+;@@@'  ,@@@@@+ @@@@@@@@@@'         @@#       @@+   .@#      @@`  ,@#   @@    '@@@;#@@@@   `@@@;'@@@.  #@#      @@  ,@@@;'@@@`
+               :@@    @@  :@+   :@+   @@@    ,@@.   @@@    ;@@`   #@.          #@@          @@#      '@@    .@#      @@`  ,@#   @@    @@;   .@@@   @@:    #@@  .@@     .@@  @@,    @@+
+                @@   ;@;  `@@   +@:   @@`     +@@  `@@      #@#   #@.         :@@           @@@@@@@@@@@`    .@#      @@`  ,@#   @@   '@@     +@@   @@      @@   @@.    #@:  @@     .@@
+                @@   #@`   @@   @@   ;@@       @@  #@#      `@@   #@.        `@@,           @@@@@@@@@@@:    .@#      @@`  ,@#   @@   @@,      @@   @@'          +@+    @@   @@:
+                @@`  @@    #@`  @@   #@+       @@  @@:       @@   #@.        @@+            @@#,,,,,;@@@+   .@#      @@`  ,@#   @@   @@`      @@   +@@@:        .@@   `@@   #@@@:
+                ;@; `@@    '@+  @@   @@:       @@` @@.       @@   #@.       #@@             @@#       ;@@`  .@#      @@`  ,@#   @@   @@       @@    @@@@@@:      @@   +@:    @@@@@@:
+                .@+ :@'     @@ ;@:   @@:       @@. @@.       @@   #@.      ,@@`             @@#        @@+  .@#      @@`  ,@#   @@   @@       @@     ;@@@@@@.    @@'  @@      ;@@@@@@`
+                 @@ @@`     @@ #@`   @@:       @@  @@.       @@   #@.      @@;              @@#        +@@  .@#      @@`  ,@#   @@   @@       @@        '@@@@    .@@ `@@         '@@@@
+                 @@ @@      @@ @@    #@#       @@  @@;       @@   #@.     @@@               @@#        +@@  .@@      @@`  ,@#   @@   @@`      @@          `@@.    @@ ;@'           .@@`
+                 +@`@@      '@.@@    ,@@      .@@  ;@@      :@@   #@.    #@@                @@#        @@+  .@@     `@@`  ,@#   @@   #@+      @@  `@@      @@,    #@,@@    .@@      @@`
+                 ,@:@+      .@+@'     @@,     @@#  `@@.     @@'   #@.   ,@@`                @@#       :@@.  `@@     #@@`  ,@#   @@   .@@     #@@   @@      @@.    .@#@@     @@`     @@`
+                  @@@.       @@@.     +@@.   #@@`   #@@`   @@@    #@+  `@@' ```````         @@#,,,,,;@@@@    @@@   +@@@`  ,@#   @@    @@@   ;@@@   @@@    '@@      @@@'     #@@    +@@
+                  @@@        @@@       @@@@@@@@:     @@@@@@@@.    '@@@@,@@@@@@@@@@@         @@@@@@@@@@@@     ;@@@@@@+#@`  ,@#   @@    `@@@@@@@@@    @@@@@@@@,      @@@`      @@@@@@@@.
+                  @@@        #@@        +@@@@@`       #@@@@#`      @@@@,@@@@@@@@@@@         @@@@@@@@@#,       ;@@@@' #@`  ,@#   @@      @@@@# @@     #@@@@@.       ,@@       `#@@@@@`
+                                                                                                                                                                   ,@+
+                                                                                                                                                                   @@
+                                                                                                                                                                   @@
+                                                                                                                                                               `:;@@:
+                                                                                                                                                                @@@@
+                                                                                                                                                                #@+
+
+
+
+                                       ,,,,.                .                             .                   .,,,,
+                                      .+''':               ,+                            ,+                   '+'''         `.
+                                      .+                                                                      ';            ,+
+                                      .+     ..`,.    ,,,, `,  , .,     ,,     ,,`   , , `,  , .,    .,,,.    ';     ,   , .;+,` ,   ,` `.`,   ,,
+                                      .+     :'+;+,  +';+; `+  +''++   +;;+   +';+`  '+' .+  ++'++  :+;+',    ';    `+   + ,'+;. +   +. ,'+' `+;'+
+                                      .++++  :+  ,+ `+  ', `+  +,  +` ',  ;; ;;  ,+  +`  .+  +,  +  +`  +     '';;; `+   +  ,+   +   +. ,+   +`  +,
+                                      .+     :;  `+ `+  ', `+  +   +` +;;;;' +;;;;+  +   .+  +   +  +`  +     '',,, `+   +  ,+   +   +. ,+   +;;;';
+                                      .+     :;  `+  +';+  `+  +   +` +,,,,. +:,,,,  +   .+  +   +  ;+;+:     ';    `+   +  ,+   +   +. ,+   +,,,,.
+                                      .+     :;  `+ ,;.,   `+  +   +` +`     +.      +   .+  +   +  +`,.      ';    `+   +  ,+   +   +. ,+   +
+                                      .+     :;  `+ .+:,,  `+  +   +` ;'  `. ,+   :  +   .+  +   +  +;:,`     ';     +` '+  .+   +: :+. ,+   +;  .`
+                                      .++++' :;  `+ `+:;++ `+  +   +`  '+++`  '+++.  +   .+  +   +  ';:;+.    ';     :++:+   ++: `++''. ,+    ++++
+                                                    ',   +                                         `+   ':
+                                                    ;'..;+                                          +,.,+`
+                                                     :++:                                           .'+'`
+
+-->
+
+
+<title> Wootz BuildSys | Engineering Future </title>
+<meta name="google-site-verification" content="pNMzP0VF6tVhO7rLUyIR7pfkEF2oWVheIrk929qkBZg" />
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="author" content="_an0N_">
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+<meta name="theme-color" content="#efefef">
+<meta name="description" content=" Wootz BuildSys is committed to delivering high quality projects and innovate design solutions using Pre Engineered Building technology along with other prefabricated & green materials">
+<meta name="keywords" content="wootz, wootz steel, Light Gauge Steel Frame, light gauge steel structure, LSFG, lgsf building, lgsf manufacturer, tensile structure, eco green buildings, eco friendly structure, house structure design, eco friendly building, roof structure design, prefab roof extension,  structural design for residential house, steel frame home extensions, steel framing system, pre engineered buildings, pre engineered steel structures, pre engineered steel buildings, steel buildings, pre engineered structures, prefab buildings, prefabricated structures, Pre Engineered Building, PEB, Pre-fabricated Structure, cottages, green building, pre-engineered buildings, steel frame, "/>
+<meta name="abstract" content="Wootz BuildSys is committed to delivering high quality projects and innovate design solutions">
+<meta name="robots" content="index, follow, noydir">
+<meta name="googlebot" content="index, follow">
+<meta name="bingbot" content="index, follow">
+<meta name="rating" content="general">
+<meta name="allow-search" content="yes">
+<meta name="revisit-after" content="1 days">
+<meta name="language" content="english">
+<meta name="copyright" content="Wootz BuildSys">
+<meta name="distribution" content="global">
+<meta name="expires" content="never">
+<meta name="geo.region" content="IN-HR" />
+<meta name="geo.placename" content="Faridabad,Delhi NCR" />
+<meta name="geo.position" content="28.444639;77.308252" />
+<meta name="ICBM" content="28.444639, 77.308252" />
+
+
+
+
+<link rel="stylesheet" href="assets/web/assets/mobirise-icons-bold/mobirise-icons-bold.css">
+<link rel="stylesheet" href="assets/web/assets/mobirise-icons/mobirise-icons.css">
+<link rel="stylesheet" href="assets/tether/tether.min.css">
+<link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+<link rel="stylesheet" href="assets/bootstrap/css/bootstrap-grid.min.css">
+<link rel="stylesheet" href="assets/bootstrap/css/bootstrap-reboot.min.css">
+<link rel="stylesheet" href="assets/dropdown/css/style.css">
+<link rel="stylesheet" href="assets/animatecss/animate.min.css">
+<link rel="stylesheet" href="assets/socicon/css/styles.css">
+<link rel="stylesheet" href="assets/theme/css/style.css">
+<link rel="stylesheet" href="assets/gallery/style.css">
+<link rel="stylesheet" href="assets/mobirise/css/mbr-additional.css" type="text/css">
+<link rel="shortcut icon" href="assets/images/fav-128x126.png" type="image/x-icon">
+
+  <style>
+  ::-moz-selection { background-color: #efefef; color: #0f6a36; }
+  ::selection { background-color: #efefef; color: #0f6a36; }
+  </style>
+</head>
+
+
+
   
-<script>
-var myVar;
-function myFunction() {
-  myVar = setTimeout(showPage, 3000);
-}
-function showPage() {
-  document.getElementById("loader").style.display = "none";
-  document.getElementById("myDiv").style.display = "block";
-}
-</script>
-  </head>
+ <body>
   
-<body onload="myFunction()" style="margin:0;">
 
-<div id="loader">
-
-<div class="sk-cube-grid">
-  <div class="sk-cube sk-cube1"></div>
-  <div class="sk-cube sk-cube2"></div>
-  <div class="sk-cube sk-cube3"></div>
-  <div class="sk-cube sk-cube4"></div>
-  <div class="sk-cube sk-cube5"></div>
-  <div class="sk-cube sk-cube6"></div>
-  <div class="sk-cube sk-cube7"></div>
-  <div class="sk-cube sk-cube8"></div>
-  <div class="sk-cube sk-cube9"></div>
-</div>
-</div>
-<div style="display:none;"id="myDiv">
-
-
-
-
-
-
-  <section class="menu cid-rngjLNopSc" once="menu" id="menu2-0">
+  
+    
+    <section class="menu cid-rnqGQYlYuP" once="menu" id="menu2-1r">
 
 
 
@@ -197,9 +126,9 @@ function showPage() {
         <div class="menu-logo">
             <div class="navbar-brand">
                 <span class="navbar-logo">
-
-                        <img src="assets/images/logo-png-copy-176x121.png" alt="WOOTZ" title="" style="height: 3.8rem;">
-
+                  <a href="https://www.wootz.in/">
+                     <img src="assets/images/logo-png-copy-176x121.png" alt="LOGO" title="" style="height: 3.8rem;" draggable="false" style="-moz-user-select: none;">
+                  </a>
                 </span>
 
             </div>
@@ -218,15 +147,14 @@ function showPage() {
                 </li><li class="nav-item"><a class="nav-link link text-black display-4" href="index.html#content5-1b">
                         About Us</a></li><li class="nav-item"><a class="nav-link link text-black display-4" href="index.html#contacts3-1h">
                         Contact Us</a></li></ul>
-            <div class="navbar-buttons mbr-section-btn"><a class="btn btn-sm btn-info display-4" href="tel:+1-234-567-8901">
-                    <span class="btn-icon mbri-mobile mbr-iconfont mbr-iconfont-btn">
-                    </span>
-                    +91-0129-Ph-No.</a></div>
+            <div class="navbar-buttons mbr-section-btn"><a class="btn btn-sm btn-info display-4" href="tel:+1-234-567-8901"><span class="socicon socicon-viber mbr-iconfont mbr-iconfont-btn" style="color: rgb(239, 239, 239);"></span>
+
+                    +91-0129-298-5370</a></div>
         </div>
     </nav>
 </section>
 
-<section class="engine"><a href="https://mobirise.info/v">free html templates</a></section><section class="cid-rngmFQK13e mbr-fullscreen mbr-parallax-background" id="header2-1">
+</section><section class="cid-rngmFQK13e mbr-fullscreen mbr-parallax-background" id="header2-1">
 
 
 
@@ -259,69 +187,10 @@ function showPage() {
     <div class="container">
         <div class="inner-container" style="width: 100%;">
             <hr class="line" style="width: 19%;">
-            <div class="section-text align-center mbr-fonts-style display-5">Committed to delivering high quality projects and innovate design solutions<strong><br></strong><br><em>Wootz BuildSys has been incorporated to provide complete building construction solutions using latest and innovative techniques in the industry. It is our endeavor to provide our customers a bench marking quality experience through modern &amp; innovative product and services.</em></div>
+            <div class="section-text align-center mbr-fonts-style display-5">Wootz BuildSys has been incorporated to provide complete building construction solutions using latest and innovative techniques in the industry. It is our endeavor to provide our customers a bench marking quality experience through modern &amp; innovative product and services.</div>
             <hr class="line" style="width: 19%;">
         </div>
         </div>
-</section>
-
-<section class="features18 popup-btn-cards cid-rngEdPO74f" id="features18-c">
-
-
-
-
-    <div class="container">
-
-
-        <div class="media-container-row pt-5 ">
-            <div class="card p-3 col-12 col-md-6 col-lg-4">
-                <div class="card-wrapper ">
-                    <div class="card-img">
-                        <div class="mbr-overlay"></div>
-                        <div class="mbr-section-btn text-center"><a href="index.html#content5-f" class="btn btn-primary display-4">Learn More</a></div>
-                        <img src="assets/images/img-3-676x450.jpg" alt="" title="">
-                    </div>
-                    <div class="card-box">
-                        <h4 class="card-title mbr-fonts-style display-7">Services</h4>
-                        <p class="mbr-text mbr-fonts-style align-left display-7">
-                            We offer start-to-finish solutions for every project. We also offer full design services.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="card p-3 col-12 col-md-6 col-lg-4">
-                <div class="card-wrapper">
-                    <div class="card-img">
-                        <div class="mbr-overlay"></div>
-                        <div class="mbr-section-btn text-center"><a href="index.html#content5-j" class="btn btn-primary display-4">Learn More</a></div>
-                        <img src="assets/images/img-2-400x265.jpg" alt="" title="">
-                    </div>
-                    <div class="card-box">
-                        <h4 class="card-title mbr-fonts-style display-7">
-                            Technology</h4>
-                        <p class="mbr-text mbr-fonts-style display-7">
-                           Using the most modern Steel  construction technology (LGSF) &amp; Pre-engineered structures.
-                        </p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="card p-3 col-12 col-md-6 col-lg-4">
-                <div class="card-wrapper">
-                    <div class="card-img">
-                        <div class="mbr-overlay"></div>
-                        <div class="mbr-section-btn text-center"><a href="index.html#content5-1b" class="btn btn-primary display-4">Learn More</a></div>
-                        <img src="assets/images/img-3-400x265.jpg" alt="" title="">
-                    </div>
-                    <div class="card-box">
-                        <h4 class="card-title mbr-fonts-style display-7">About Us</h4>
-                        <p class="mbr-text mbr-fonts-style display-7">We Specialize in end to end building solutions using LGSF and pre-engineered buildings.</p>
-                    </div>
-                </div>
-            </div>
-
-
-        </div>
-    </div>
 </section>
 
 <section class="mbr-section content5 cid-rngKnrPmaz mbr-parallax-background" id="content5-f">
@@ -334,14 +203,22 @@ function showPage() {
     <div class="container">
         <div class="media-container-row">
             <div class="title col-12 col-md-8">
-                <h2 class="align-center mbr-bold mbr-white pb-3 mbr-fonts-style display-1">
-                    Our Services</h2>
+                <h2 class="align-center mbr-bold mbr-white pb-3 mbr-fonts-style display-1">Services</h2>
 
-                <p class="mbr-text align-center mbr-white pb-3 mbr-fonts-style display-5">
-                    We expertize in building constructions using Light Gauge Steel Frame (LGSF) and latest prefabricated and green materials . We offer end-to-end solutions maintaining best of quality standards for every project.
-                </p>
+
 
             </div>
+        </div>
+    </div>
+</section>
+
+<section class="mbr-section article content1 cid-rnJq9pTPPa" id="content1-1v">
+
+
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 mbr-fonts-style display-7 col-md-12"><p>We use Light Gauge Steel Frames ( LGSF) and Mild Steel construction, Pre Engineered Building(PEB) along with other prefabricated and <a style="color:#0c5a38;">green</a> materials for Building Construction. The system is totally engineered and backed by design reports which can be vetted by premium agencies like IITs/ NITs if required.</p></div>
         </div>
     </div>
 </section>
@@ -367,9 +244,7 @@ function showPage() {
                     <div class="block-content">
                         <div class="card p-3 pr-3">
                             <div class="media">
-                                <div class=" align-self-center card-img pb-3">
-                                    <span class="mbr-iconfont mbri-home"></span>
-                                </div>
+
                                 <div class="media-body">
                                     <h4 class="card-title mbr-fonts-style display-2">
                                         APPLICATIONS:
@@ -378,17 +253,14 @@ function showPage() {
                             </div>
 
                             <div class="card-box">
-                                <p class="block-text mbr-fonts-style display-5">Customized residential dwellings, Villas, roof top extensions etc.<br>Farm houses, Motels, Highway joints, resorts&nbsp;<br>Townships in Low rise structures<br>Schools and Colleges&nbsp;<br>Hospitals <br>Offices<br>Kiosks and Public convenience units.
-<br>All Building types in hilly areas
-<br>Other such structures.</p>
+                                <p class="block-text mbr-fonts-style display-5">Any Building type is possible for eg :- <br>1) Residential houses <br>2) Farm Houses ( even where conventional brick &amp; mortar not approved) <br>3) Multi Storied appartments <br>4) Schools &amp; Universities <br>5) Hospitals <br>6) Factory Buildings <br> 7) Office Buildings and other commercial Buildings <br>8) Site offices, Labour accomodations and toilet blocks <br>
+</p>
                             </div>
                         </div>
 
                         <div class="card p-3 pr-3">
                             <div class="media">
-                                <div class="align-self-center card-img pb-3">
-                                    <span class="mbr-iconfont mbri-more-horizontal"></span>
-                                </div>
+
                                 <div class="media-body">
                                     <h4 class="card-title mbr-fonts-style display-7"></h4>
                                 </div>
@@ -425,8 +297,8 @@ function showPage() {
 
         <div class="row py-2 justify-content-center">
             <div class="col-12 col-lg-6  col-md-8 " data-form-type="formoid">
-                <!---Formbuilder Form--->
-                <form action="https://mobirise.com/" method="POST" class="mbr-form form-with-styler" data-form-title="Mobirise Form"><input type="hidden" name="email" data-form-email="true" value="Irgtl3yqy1Yiv2cvYTQw7g67lwOPqe8L1PuKIf1682GV875cV0kVW+EYbuv6Yncouai4dMiBhBePJ1Uq9IZwQHsDeKkIdcWGRIGqEjWbHpz3eB7sVK9LVpqPzByGCF1G">
+                
+                <form action="https://wootz.in/" method="POST" class="mbr-form form-with-styler"><input type="hidden" name="email" data-form-email="true" value="VcX9dnfgyVyhME5wph8Yi6N95zMz5d0umcL9dX22CnBUnUhCJ9KlH3e6Ay4xpkYWKwojj0YM/iBirNnMXZaQNy2TNSnA/O05aUARIdCeOZcSeJXgrzZ+ENMeF7CotfUE">
                     <div class="row">
                         <div hidden="hidden" data-form-alert="" class="alert alert-success col-12">Thanks for filling out the form!</div>
                         <div hidden="hidden" data-form-alert-danger="" class="alert alert-danger col-12">
@@ -438,7 +310,7 @@ function showPage() {
                         </div>
                         <div class="col-auto input-group-btn"><button type="submit" class="btn btn-primary display-4"><span class="mbri-success mbr-iconfont mbr-iconfont-btn"></span>SUBSCRIBE</button></div>
                     </div>
-                </form><!---Formbuilder Form--->
+                </form>
             </div>
         </div>
     </div>
@@ -454,8 +326,8 @@ function showPage() {
     <div class="container">
         <div class="media-container-row">
             <div class="title col-12 col-md-8">
-                <h2 class="align-center mbr-bold mbr-white pb-3 mbr-fonts-style display-1">TECHNOLOGY</h2>
-                <h3 class="mbr-section-subtitle align-center mbr-light mbr-white pb-3 mbr-fonts-style display-5"></h3>
+                <h2 class="align-center mbr-bold mbr-white pb-3 mbr-fonts-style display-1">Technology</h2>
+
 
 
             </div>
@@ -522,7 +394,7 @@ function showPage() {
                 <div class="card pl-3 pr-3 pb-5">
                     <div class="mbr-card-img-title">
                         <div class="card-img pb-3">
-                             <span class="mbr-iconfont mbri-setting"></span>
+                             <span class="mbr-iconfont mbrib-growing-chart"></span>
                         </div>
                         <div class="mbr-crt-title">
 
@@ -531,14 +403,15 @@ function showPage() {
 
                     <div class="card-box">
                         <p class="mbr-text mbr-section-text mbr-fonts-style display-7">
-                            LGSF structure is CAD driven process and designed on dedicated software which provides complete output including drawings and Material BOQ. </p>
+                           Construction speed is much faster and it is easy to install without requiring heavy equipment such as cranes.
+                             </p>
                     </div>
                 </div>
 
                 <div class="card pl-3 pr-3">
                     <div class="mbr-card-img-title">
                         <div class="card-img pb-3">
-                            <span class="mbr-iconfont mbrib-growing-chart"></span>
+                            <span class="mbr-iconfont  mbri-setting"></span>
                         </div>
                         <div class="mbr-crt-title">
 
@@ -546,7 +419,7 @@ function showPage() {
                     </div>
                     <div class="card-box">
                         <p class="mbr-text mbr-section-text mbr-fonts-style display-7">
-                            Construction speed is much faster and it is easy to install without requiring heavy equipment such as cranes.</p>
+                           LGSF structure is CAD driven process and designed on dedicated software which provides complete output including drawings and Material BOQ.</p>
                     </div>
                 </div>
             </div>
@@ -571,7 +444,7 @@ function showPage() {
 
             </div>
 
-            <div class="mbr-figure" style="width: 200%;"><iframe class="mbr-embedded-video" src="https://www.youtube.com/embed/2IthoM5ux80?rel=0&amp;amp;showinfo=0&amp;autoplay=1&amp;loop=1&amp;playlist=2IthoM5ux80" width="1280" height="720" frameborder="0" allowfullscreen></iframe></div>
+            <div class="mbr-figure" style="width: 200%;"><iframe class="mbr-embedded-video" src="https://www.youtube.com/embed/2IthoM5ux80?rel=0&amp;amp;showinfo=0&amp;autoplay=0&amp;loop=1&amp;playlist=2IthoM5ux80" width="1280" height="720" frameborder="0" allowfullscreen></iframe></div>
 
         </div>
     </div>
@@ -595,7 +468,7 @@ function showPage() {
 
             </div>
 
-            <div class="mbr-figure" style="width: 200%;"><iframe class="mbr-embedded-video" src="https://www.youtube.com/embed/JaKu6mNV8MA?rel=0&amp;amp;showinfo=0&amp;autoplay=1&amp;loop=1&amp;playlist=JaKu6mNV8MA" width="1280" height="720" frameborder="0" allowfullscreen></iframe></div>
+            <div class="mbr-figure" style="width: 200%;"><iframe class="mbr-embedded-video" src="https://www.youtube.com/embed/JaKu6mNV8MA?rel=0&amp;amp;showinfo=0&amp;autoplay=0&amp;loop=1&amp;playlist=JaKu6mNV8MA" width="1280" height="720" frameborder="0" allowfullscreen></iframe></div>
 
         </div>
     </div>
@@ -619,16 +492,19 @@ function showPage() {
 
     <div class="container">
         <div class="media-container-row">
-            <div class="mbr-text counter-container col-12 col-md-8 mbr-fonts-style display-7">
+            <div class="mbr-text counter-container col-12 col-md-8 mbr-fonts-style display-7" style="width: 850px;">
                 <ul>
-                    <li><strong><u>Stability</u></strong> - We use Light Gauge Steel Frame (LGSF) which is ideal for high wind zone( 200 Kmph) as well as high seismic zone area (Zone V) as the dead load of entire structure system is much lower as compared to RCC.
-</li><li><strong><u>Lighter &amp; Stronger</u></strong>  - This entire structure is much lighter (almost 30-35 %) but stronger as compared to RCC building and is a highly earth quake resistant structure system. The entire framing system is manufactured out of Hi-quality Hi tensile Galvanized steel.
-</li><li><strong><u>Longer life and easy to maintain</u></strong>  - It provides better habitable environment due to insulated constructions.
-</li><li><strong><u>Building extensions</u></strong> -  Being light weight this structure is suitable for all vertical expansions, even on older building structure.
-</li><li><strong><u>Quality Structure</u></strong>  -  This system used high tensile steel (550Mpa) for structural members with anti-rust zinc coating of 275gsm making it completely weather proof.
-</li><li><strong><u>Customized system</u></strong>  - Complete LGSF system is designed as per the client requirements and comes with the design report proving the structural stability. This report can be verified by any competent authority.
-</li><li><strong><u>Environment Friendly</u></strong> -  All materials used for construction are factory finished material and are eco friendly in nature.
-</li><li><strong><u>Compliance</u></strong>  -  This structure complies to all relevant Indian and international codes required for designing the system.</li>
+                    <li><strong><u>Speed </u></strong>  - We take half the time of a conventional building </li>
+                    <li><strong><u style="color:#0c5a38;">Green</u><u>Building</u></strong>  - All materials used are Environment friendly materials.</li>
+                    <li><strong><u>Standardisation</u></strong>  - All raw materials used are produced in compliant factories under total quality control systems . Test Certificates are provided with all materials.</li>
+                    <li><strong><u>Earth Quake resistant</u></strong> - LGSF construction is ideal for high wind zone( 200 Kmph) as well as high seismic zone area (Zone V) as the dead load of entire structure system is much lower as compared to RCC.</li>
+                    <li><strong><u>Lighter &amp; Stronger</u></strong>  - This entire structure is much lighter (almost 30-35 %) but stronger as compared to RCC building and is a highly earth quake resistant structure system. The entire framing system is manufactured out of Hi-quality Hi tensile Galvanized steel.</li>
+                    <li><strong><u>Longer life & easy to maintain</u></strong>  - It provides better habitable environment due to insulated constructions.</li>
+                    <li><strong><u>Building extensions</u></strong> -  Being light weight this structure is suitable for all vertical expansions, even on older building structure.</li>
+                    <li><strong><u>Quality Structure</u></strong>  -  This system used high tensile steel (550Mpa) for structural members with anti-rust zinc coating of 275gsm making it completely weather proof.</li>
+                    <li><strong><u>Customized system</u></strong>  - Complete LGSF system is designed as per the client requirements and comes with the design report proving the structural stability. This report can be verified by any competent authority.</li>
+                    <li><strong><u>Environment Friendly</u></strong> -  All materials used for construction are factory finished material and are eco friendly in nature.</li>
+                    <li><strong><u>Compliance</u></strong>  -  This structure complies to all relevant Indian and international codes required for designing the system.</li>
                 </ul>
             </div>
         </div>
@@ -645,7 +521,7 @@ function showPage() {
         <div class="media-container-row">
             <div class="title col-12 col-md-8">
                 <h2 class="align-center mbr-bold mbr-white pb-3 mbr-fonts-style display-1">
-                    PROJECT GALLERY</h2>
+                    Project Gallery</h2>
                 <h3 class="mbr-section-subtitle align-center mbr-light mbr-white pb-3 mbr-fonts-style display-5">
                     Some of our works and projects.</h3>
 
@@ -659,7 +535,7 @@ function showPage() {
 
 
 
-    <div class="full-screen"><div class="mbr-slider slide carousel" data-pause="true" data-keyboard="false" data-ride="carousel" data-interval="2000"><ol class="carousel-indicators"><li data-app-prevent-settings="" data-target="#slider1-12" class=" active" data-slide-to="0"></li><li data-app-prevent-settings="" data-target="#slider1-12" data-slide-to="1"></li><li data-app-prevent-settings="" data-target="#slider1-12" data-slide-to="2"></li></ol><div class="carousel-inner" role="listbox"><div class="carousel-item slider-fullscreen-image active" data-bg-video-slide="false" style="background-image: url(assets/images/2-1875x1080.jpg);"><div class="container container-slide"><div class="image_wrapper"><div class="mbr-overlay" style="opacity: 0.3;"></div><img src="assets/images/2-1875x1080.jpg"><div class="carousel-caption justify-content-center"><div class="col-10 align-center"><h2 class="mbr-fonts-style display-1"><p>More info</p></h2><p class="lead mbr-text mbr-fonts-style display-5">textLine</p></div></div></div></div></div><div class="carousel-item slider-fullscreen-image" data-bg-video-slide="false" style="background-image: url(assets/images/13-1280x720.jpg);"><div class="container container-slide"><div class="image_wrapper"><div class="mbr-overlay" style="opacity: 0.4;"></div><img src="assets/images/13-1280x720.jpg"><div class="carousel-caption justify-content-center"><div class="col-10 align-left"><h2 class="mbr-fonts-style display-1">More info</h2><p class="lead mbr-text mbr-fonts-style display-5">text lineeeeee</p></div></div></div></div></div><div class="carousel-item slider-fullscreen-image" data-bg-video-slide="false" style="background-image: url(assets/images/6-1080x1080.jpg);"><div class="container container-slide"><div class="image_wrapper"><div class="mbr-overlay" style="opacity: 0.2;"></div><img src="assets/images/6-1080x1080.jpg"><div class="carousel-caption justify-content-center"><div class="col-10 align-right"><h2 class="mbr-fonts-style display-1">More info</h2><p class="lead mbr-text mbr-fonts-style display-5">text lineee</p></div></div></div></div></div></div><a data-app-prevent-settings="" class="carousel-control carousel-control-prev" role="button" data-slide="prev" href="#slider1-12"><span aria-hidden="true" class="mbri-left mbr-iconfont"></span><span class="sr-only">Previous</span></a><a data-app-prevent-settings="" class="carousel-control carousel-control-next" role="button" data-slide="next" href="#slider1-12"><span aria-hidden="true" class="mbri-right mbr-iconfont"></span><span class="sr-only">Next</span></a></div></div>
+    <div class="full-screen"><div class="mbr-slider slide carousel" data-pause="true" data-keyboard="false" data-ride="carousel" data-interval="2000"><ol class="carousel-indicators"><li data-app-prevent-settings="" data-target="#slider1-12" class=" active" data-slide-to="0"></li><li data-app-prevent-settings="" data-target="#slider1-12" data-slide-to="1"></li><li data-app-prevent-settings="" data-target="#slider1-12" data-slide-to="2"></li><li data-app-prevent-settings="" data-target="#slider1-12" data-slide-to="3"></li><li data-app-prevent-settings="" data-target="#slider1-12" data-slide-to="4"></li><li data-app-prevent-settings="" data-target="#slider1-12" data-slide-to="5"></li><li data-app-prevent-settings="" data-target="#slider1-12" data-slide-to="6"></li><li data-app-prevent-settings="" data-target="#slider1-12" data-slide-to="7"></li><li data-app-prevent-settings="" data-target="#slider1-12" data-slide-to="8"></li><li data-app-prevent-settings="" data-target="#slider1-12" data-slide-to="9"></li><li data-app-prevent-settings="" data-target="#slider1-12" data-slide-to="10"></li><li data-app-prevent-settings="" data-target="#slider1-12" data-slide-to="11"></li><li data-app-prevent-settings="" data-target="#slider1-12" data-slide-to="12"></li><li data-app-prevent-settings="" data-target="#slider1-12" data-slide-to="13"></li></ol><div class="carousel-inner" role="listbox"><div class="carousel-item slider-fullscreen-image active" data-bg-video-slide="false" style="background-image: url(assets/images/ddocumentssiteprojects2.jpg);"><div class="container container-slide"><div class="image_wrapper"><div class="mbr-overlay" style="opacity: 0.2;"></div><img src="assets/images/ddocumentssiteprojects2.jpg"><div class="carousel-caption justify-content-center"><div class="col-10 align-right"><h2 class="mbr-fonts-style display-1"></h2><p class="lead mbr-text mbr-fonts-style display-5"></p></div></div></div></div></div><div class="carousel-item slider-fullscreen-image" data-bg-video-slide="false" style="background-image: url(assets/images/ddocumentssiteprojects3.jpg);"><div class="container container-slide"><div class="image_wrapper"><div class="mbr-overlay" style="opacity: 0.2;"></div><img src="assets/images/ddocumentssiteprojects3.jpg"><div class="carousel-caption justify-content-center"><div class="col-10 align-right"><h2 class="mbr-fonts-style display-1"></h2><p class="lead mbr-text mbr-fonts-style display-5"></p></div></div></div></div></div><div class="carousel-item slider-fullscreen-image" data-bg-video-slide="false" style="background-image: url(assets/images/ddocumentssiteprojects5.jpg);"><div class="container container-slide"><div class="image_wrapper"><div class="mbr-overlay" style="opacity: 0.2;"></div><img src="assets/images/ddocumentssiteprojects5.jpg"><div class="carousel-caption justify-content-center"><div class="col-10 align-right"><h2 class="mbr-fonts-style display-1"></h2><p class="lead mbr-text mbr-fonts-style display-5"></p></div></div></div></div></div><div class="carousel-item slider-fullscreen-image" data-bg-video-slide="false" style="background-image: url(assets/images/ddocumentssiteprojects21.jpeg);"><div class="container container-slide"><div class="image_wrapper"><div class="mbr-overlay" style="opacity: 0.2;"></div><img src="assets/images/ddocumentssiteprojects21.jpeg"><div class="carousel-caption justify-content-center"><div class="col-10 align-right"><h2 class="mbr-fonts-style display-1"></h2><p class="lead mbr-text mbr-fonts-style display-5"></p></div></div></div></div></div><div class="carousel-item slider-fullscreen-image" data-bg-video-slide="false" style="background-image: url(assets/images/ddocumentssiteprojects6.jpg);"><div class="container container-slide"><div class="image_wrapper"><div class="mbr-overlay" style="opacity: 0.2;"></div><img src="assets/images/ddocumentssiteprojects6.jpg"><div class="carousel-caption justify-content-center"><div class="col-10 align-right"><h2 class="mbr-fonts-style display-1"></h2><p class="lead mbr-text mbr-fonts-style display-5"></p></div></div></div></div></div><div class="carousel-item slider-fullscreen-image" data-bg-video-slide="false" style="background-image: url(assets/images/ddocumentssiteprojects8-1.jpg);"><div class="container container-slide"><div class="image_wrapper"><div class="mbr-overlay" style="opacity: 0.2;"></div><img src="assets/images/ddocumentssiteprojects8-1.jpg"><div class="carousel-caption justify-content-center"><div class="col-10 align-right"><h2 class="mbr-fonts-style display-1"></h2><p class="lead mbr-text mbr-fonts-style display-5"></p></div></div></div></div></div><div class="carousel-item slider-fullscreen-image" data-bg-video-slide="false" style="background-image: url(assets/images/ddocumentssiteprojects13.jpg);"><div class="container container-slide"><div class="image_wrapper"><div class="mbr-overlay" style="opacity: 0.2;"></div><img src="assets/images/ddocumentssiteprojects13.jpg"><div class="carousel-caption justify-content-center"><div class="col-10 align-right"><h2 class="mbr-fonts-style display-1"></h2><p class="lead mbr-text mbr-fonts-style display-5"></p></div></div></div></div></div><div class="carousel-item slider-fullscreen-image" data-bg-video-slide="false" style="background-image: url(assets/images/ddocumentssiteprojects18.jpg);"><div class="container container-slide"><div class="image_wrapper"><div class="mbr-overlay" style="opacity: 0.2;"></div><img src="assets/images/ddocumentssiteprojects18.jpg"><div class="carousel-caption justify-content-center"><div class="col-10 align-right"><h2 class="mbr-fonts-style display-1"></h2><p class="lead mbr-text mbr-fonts-style display-5"></p></div></div></div></div></div><div class="carousel-item slider-fullscreen-image" data-bg-video-slide="false" style="background-image: url(assets/images/ddocumentssiteprojects22.jpg);"><div class="container container-slide"><div class="image_wrapper"><div class="mbr-overlay" style="opacity: 0.2;"></div><img src="assets/images/ddocumentssiteprojects22.jpg"><div class="carousel-caption justify-content-center"><div class="col-10 align-right"><h2 class="mbr-fonts-style display-1"></h2><p class="lead mbr-text mbr-fonts-style display-5"></p></div></div></div></div></div><div class="carousel-item slider-fullscreen-image" data-bg-video-slide="false" style="background-image: url(assets/images/ddocumentssiteprojects23.jpg);"><div class="container container-slide"><div class="image_wrapper"><div class="mbr-overlay" style="opacity: 0.2;"></div><img src="assets/images/ddocumentssiteprojects23.jpg"><div class="carousel-caption justify-content-center"><div class="col-10 align-right"><h2 class="mbr-fonts-style display-1"></h2><p class="lead mbr-text mbr-fonts-style display-5"></p></div></div></div></div></div><div class="carousel-item slider-fullscreen-image" data-bg-video-slide="false" style="background-image: url(assets/images/ddocumentssiteprojects24.jpg);"><div class="container container-slide"><div class="image_wrapper"><div class="mbr-overlay" style="opacity: 0.2;"></div><img src="assets/images/ddocumentssiteprojects24.jpg"><div class="carousel-caption justify-content-center"><div class="col-10 align-right"><h2 class="mbr-fonts-style display-1"></h2><p class="lead mbr-text mbr-fonts-style display-5"></p></div></div></div></div></div><div class="carousel-item slider-fullscreen-image" data-bg-video-slide="false" style="background-image: url(assets/images/ddocumentssiteprojects25.jpg);"><div class="container container-slide"><div class="image_wrapper"><div class="mbr-overlay" style="opacity: 0.2;"></div><img src="assets/images/ddocumentssiteprojects25.jpg"><div class="carousel-caption justify-content-center"><div class="col-10 align-right"><h2 class="mbr-fonts-style display-1"></h2><p class="lead mbr-text mbr-fonts-style display-5"></p></div></div></div></div></div><div class="carousel-item slider-fullscreen-image" data-bg-video-slide="false" style="background-image: url(assets/images/ddocumentssiteprojects26.jpg);"><div class="container container-slide"><div class="image_wrapper"><div class="mbr-overlay" style="opacity: 0.2;"></div><img src="assets/images/ddocumentssiteprojects26.jpg"><div class="carousel-caption justify-content-center"><div class="col-10 align-right"><h2 class="mbr-fonts-style display-1"></h2><p class="lead mbr-text mbr-fonts-style display-5"></p></div></div></div></div></div><div class="carousel-item slider-fullscreen-image" data-bg-video-slide="false" style="background-image: url(assets/images/ddocumentssiteprojects27.jpg);"><div class="container container-slide"><div class="image_wrapper"><div class="mbr-overlay" style="opacity: 0.2;"></div><img src="assets/images/ddocumentssiteprojects27.jpg"><div class="carousel-caption justify-content-center"><div class="col-10 align-right"><h2 class="mbr-fonts-style display-1"></h2><p class="lead mbr-text mbr-fonts-style display-5"></p></div></div></div></div></div></div><a data-app-prevent-settings="" class="carousel-control carousel-control-prev" role="button" data-slide="prev" href="#slider1-12"><span aria-hidden="true" class="mbri-left mbr-iconfont"></span><span class="sr-only">Previous</span></a><a data-app-prevent-settings="" class="carousel-control carousel-control-next" role="button" data-slide="next" href="#slider1-12"><span aria-hidden="true" class="mbri-right mbr-iconfont"></span><span class="sr-only">Next</span></a></div></div>
 
 </section>
 
@@ -668,7 +544,7 @@ function showPage() {
 
 
     <div>
-        <div><!-- Filter --><!-- Gallery --><div class="mbr-gallery-row"><div class="mbr-gallery-layout-default"><div><div><div class="mbr-gallery-item mbr-gallery-item--p1" data-video-url="false" data-tags="Awesome"><div href="#lb-gallery3-10" data-slide-to="0" data-toggle="modal"><img src="assets/images/3-1440x1080-800x600.jpg" alt="" title=""><span class="icon-focus"></span></div></div><div class="mbr-gallery-item mbr-gallery-item--p1" data-video-url="false" data-tags="Responsive"><div href="#lb-gallery3-10" data-slide-to="1" data-toggle="modal"><img src="assets/images/8-1152x864-800x600.jpg" alt="" title=""><span class="icon-focus"></span></div></div><div class="mbr-gallery-item mbr-gallery-item--p1" data-video-url="false" data-tags="Creative"><div href="#lb-gallery3-10" data-slide-to="2" data-toggle="modal"><img src="assets/images/5-1040x780-800x600.jpg" alt="" title=""><span class="icon-focus"></span></div></div><div class="mbr-gallery-item mbr-gallery-item--p1" data-video-url="false" data-tags="Animated"><div href="#lb-gallery3-10" data-slide-to="3" data-toggle="modal"><img src="assets/images/7-799x600-799x600.jpg" alt="" title=""><span class="icon-focus"></span></div></div><div class="mbr-gallery-item mbr-gallery-item--p1" data-video-url="false" data-tags="Awesome"><div href="#lb-gallery3-10" data-slide-to="4" data-toggle="modal"><img src="assets/images/16-6-1280x723-800x558.jpg" alt="" title=""><span class="icon-focus"></span></div></div><div class="mbr-gallery-item mbr-gallery-item--p1" data-video-url="false" data-tags="Awesome"><div href="#lb-gallery3-10" data-slide-to="5" data-toggle="modal"><img src="assets/images/14-2-922x543-561x390.jpg" alt="" title=""><span class="icon-focus"></span></div></div><div class="mbr-gallery-item mbr-gallery-item--p1" data-video-url="false" data-tags="Responsive"><div href="#lb-gallery3-10" data-slide-to="6" data-toggle="modal"><img src="assets/images/15-2-960x884-800x554.jpg" alt="" title=""><span class="icon-focus"></span></div></div><div class="mbr-gallery-item mbr-gallery-item--p1" data-video-url="false" data-tags="Animated"><div href="#lb-gallery3-10" data-slide-to="7" data-toggle="modal"><img src="assets/images/18-1-924x624-800x554.jpg" alt="" title=""><span class="icon-focus"></span></div></div></div></div><div class="clearfix"></div></div></div><!-- Lightbox --><div data-app-prevent-settings="" class="mbr-slider modal fade carousel slide" tabindex="-1" data-keyboard="true" data-interval="false" id="lb-gallery3-10"><div class="modal-dialog"><div class="modal-content"><div class="modal-body"><div class="carousel-inner"><div class="carousel-item active"><img src="assets/images/3-1440x1080.jpg" alt="" title=""></div><div class="carousel-item"><img src="assets/images/8-1152x864.jpg" alt="" title=""></div><div class="carousel-item"><img src="assets/images/5-1040x780.jpg" alt="" title=""></div><div class="carousel-item"><img src="assets/images/7-799x600.jpg" alt="" title=""></div><div class="carousel-item"><img src="assets/images/16-6-1280x723.jpg" alt="" title=""></div><div class="carousel-item"><img src="assets/images/14-2-922x543.jpg" alt="" title=""></div><div class="carousel-item"><img src="assets/images/15-2-960x884.jpg" alt="" title=""></div><div class="carousel-item"><img src="assets/images/18-1-924x624.jpg" alt="" title=""></div></div><a class="carousel-control carousel-control-prev" role="button" data-slide="prev" href="#lb-gallery3-10"><span class="mbri-left mbr-iconfont" aria-hidden="true"></span><span class="sr-only">Previous</span></a><a class="carousel-control carousel-control-next" role="button" data-slide="next" href="#lb-gallery3-10"><span class="mbri-right mbr-iconfont" aria-hidden="true"></span><span class="sr-only">Next</span></a><a class="close" href="#" role="button" data-dismiss="modal"><span class="sr-only">Close</span></a></div></div></div></div></div>
+        <div><!-- Filter --><!-- Gallery --><div class="mbr-gallery-row"><div class="mbr-gallery-layout-default"><div><div><div class="mbr-gallery-item mbr-gallery-item--p1" data-video-url="false" data-tags="Awesome"><div href="#lb-gallery3-10" data-slide-to="0" data-toggle="modal"><img src="assets/images/3-1440x1080-800x600.jpg" alt="" title=""><span class="icon-focus"></span></div></div><div class="mbr-gallery-item mbr-gallery-item--p1" data-video-url="false" data-tags="Responsive"><div href="#lb-gallery3-10" data-slide-to="1" data-toggle="modal"><img src="assets/images/8-1152x864-800x600.jpg" alt="" title=""><span class="icon-focus"></span></div></div><div class="mbr-gallery-item mbr-gallery-item--p1" data-video-url="false" data-tags="Creative"><div href="#lb-gallery3-10" data-slide-to="2" data-toggle="modal"><img src="assets/images/5-1040x780-800x600.jpg" alt="" title=""><span class="icon-focus"></span></div></div><div class="mbr-gallery-item mbr-gallery-item--p1" data-video-url="false" data-tags="Animated"><div href="#lb-gallery3-10" data-slide-to="3" data-toggle="modal"><img src="assets/images/7-799x600-799x600.jpg" alt="" title=""><span class="icon-focus"></span></div></div><div class="mbr-gallery-item mbr-gallery-item--p1" data-video-url="false" data-tags="Awesome"><div href="#lb-gallery3-10" data-slide-to="4" data-toggle="modal"><img src="assets/images/16-6-1280x723-800x558.jpg" alt="" title=""><span class="icon-focus"></span></div></div><div class="mbr-gallery-item mbr-gallery-item--p1" data-video-url="false" data-tags="Awesome"><div href="#lb-gallery3-10" data-slide-to="5" data-toggle="modal"><img src="assets/images/13-3-800x558.jpg" alt="" title=""><span class="icon-focus"></span></div></div><div class="mbr-gallery-item mbr-gallery-item--p1" data-video-url="false" data-tags="Responsive"><div href="#lb-gallery3-10" data-slide-to="6" data-toggle="modal"><img src="assets/images/22-4-800x553.jpg" alt="" title=""><span class="icon-focus"></span></div></div><div class="mbr-gallery-item mbr-gallery-item--p1" data-video-url="false" data-tags="Animated"><div href="#lb-gallery3-10" data-slide-to="7" data-toggle="modal"><img src="assets/images/24-4-800x545.jpg" alt="" title=""><span class="icon-focus"></span></div></div></div></div><div class="clearfix"></div></div></div><!-- Lightbox --><div data-app-prevent-settings="" class="mbr-slider modal fade carousel slide" tabindex="-1" data-keyboard="true" data-interval="false" id="lb-gallery3-10"><div class="modal-dialog"><div class="modal-content"><div class="modal-body"><div class="carousel-inner"><div class="carousel-item active"><img src="assets/images/3-1440x1080.jpg" alt="" title=""></div><div class="carousel-item"><img src="assets/images/8-1152x864.jpg" alt="" title=""></div><div class="carousel-item"><img src="assets/images/5-1040x780.jpg" alt="" title=""></div><div class="carousel-item"><img src="assets/images/7-799x600.jpg" alt="" title=""></div><div class="carousel-item"><img src="assets/images/16-6-1280x723.jpg" alt="" title=""></div><div class="carousel-item"><img src="assets/images/13-3.jpg" alt="" title=""></div><div class="carousel-item"><img src="assets/images/22-4.jpg" alt="" title=""></div><div class="carousel-item"><img src="assets/images/24-4.jpg" alt="" title=""></div></div><a class="carousel-control carousel-control-prev" role="button" data-slide="prev" href="#lb-gallery3-10"><span class="mbri-left mbr-iconfont" aria-hidden="true"></span><span class="sr-only">Previous</span></a><a class="carousel-control carousel-control-next" role="button" data-slide="next" href="#lb-gallery3-10"><span class="mbri-right mbr-iconfont" aria-hidden="true"></span><span class="sr-only">Next</span></a><a class="close" href="#" role="button" data-dismiss="modal"><span class="sr-only">Close</span></a></div></div></div></div></div>
     </div>
 
 </section>
@@ -683,8 +559,8 @@ function showPage() {
     <div class="container">
         <div class="media-container-row">
             <div class="title col-12 col-md-8">
-                <h2 class="align-center mbr-bold mbr-white pb-3 mbr-fonts-style display-1">ABOUT US</h2>
-                <h3 class="mbr-section-subtitle align-center mbr-light mbr-white pb-3 mbr-fonts-style display-5"></h3>
+                <h2 class="align-center mbr-bold mbr-white pb-3 mbr-fonts-style display-1">About Us</h2>
+
 
 
             </div>
@@ -692,87 +568,35 @@ function showPage() {
     </div>
 </section>
 
-<section class="team1 cid-rnhpNSWmfn" id="team1-19">
+<section class="mbr-section article content1 cid-rnJnr7IiGI" id="content1-1s">
 
 
 
-    <div class="container align-center">
-        <h2 class="pb-3 mbr-fonts-style mbr-section-title display-2">
-            OUR TEAM
-        </h2>
-        <h3 class="pb-5 mbr-section-subtitle mbr-fonts-style mbr-light display-5">Wootz BuildSys LLP has been incorporated to provide complete building construction solutions. It is our endeavor to provide our customers a benchmarking quality experience through latest, modern &amp; innovative product and services.
-<div>
-</div><div>We stand committed to our environment as well and accordingly we are constantly promoting and using Eco Friendly materials and technology.
-</div><div>The Most modern systems and ethical business policies are being practiced by team of highly qualified and experienced professionals weaving a strong Value system of the organization.</div></h3>
-        <div class="row media-row">
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 mbr-fonts-style display-7 col-md-12"><p>Wootz BuildSys LLP has been incorporated to provide complete building construction solutions. It is our endeavor to provide our customers a benchmarking quality experience through latest, modern &amp; innovative product and services.
+</p><p>We stand committed to our environment as well and accordingly we are constantly promoting and using Eco Friendly materials and technology.
+</p><p>The Most modern systems and ethical business policies are being practiced by team of highly qualified and experienced professionals weaving a strong Value system of the organization.</p></div>
+        </div>
+    </div>
+</section>
 
-        <div class="team-item col-lg-3 col-md-6">
-                <div class="item-image">
-                    <img src="assets/images/1-208x202.jpg" alt="" title="">
-                </div>
-                <div class="item-caption py-3">
-                    <div class="item-name px-2">
-                        <p class="mbr-fonts-style display-5">
-                           Kapil Mitra</p>
-                    </div>
-                    <div class="item-role px-2">
-                        <p>Founder</p>
-                    </div>
-                    <div class="item-social pt-2">
-
-                            <span class="p-1 mbr-iconfont mbr-iconfont-social socicon-linkedin socicon"></span>
+<section class="mbr-section content5 cid-rnJrRtc1pJ mbr-parallax-background" id="content5-1y">
 
 
-                            <span class="p-1 mbr-iconfont mbr-iconfont-social socicon-facebook socicon"></span>
 
-                        <a href="https://plus.google.com/u/0/+Mobirise" target="_blank">
+    <div class="mbr-overlay" style="opacity: 0.2; background-color: rgb(35, 35, 35);">
+    </div>
 
-                        </a>
-                        <a href="https://www.linkedin.com/in/mobirise" target="_blank">
+    <div class="container">
+        <div class="media-container-row">
+            <div class="title col-12 col-md-8">
+                <h2 class="align-center mbr-bold mbr-white pb-3 mbr-fonts-style display-1"><br><br></h2>
+                <h3 class="mbr-section-subtitle align-center mbr-light mbr-white pb-3 mbr-fonts-style display-5"></h3>
+                <p class="mbr-text align-center mbr-white pb-3 mbr-fonts-style display-7"><br><br><br><br><br><br></p>
 
-                        </a>
-                        <a href="https://www.instagram.com/mobirise/" target="_blank">
-
-                        </a>
-                        <a href="https://www.youtube.com/channel/UCt_tncVAetpK5JeM8L-8jyw" target="_blank">
-
-                        </a>
-                    </div>
-                </div>
-            </div><div class="team-item col-lg-3 col-md-6">
-                <div class="item-image">
-                    <img src="assets/images/2-214x202.jpg" alt="" title="">
-                </div>
-                <div class="item-caption py-3">
-                    <div class="item-name px-2">
-                        <p class="mbr-fonts-style display-5">
-                           Anurag Agarwal</p>
-                    </div>
-                    <div class="item-role px-2">
-                        <p>Founder</p>
-                    </div>
-                    <div class="item-social pt-2">
-
-                            <span class="p-1 mbr-iconfont mbr-iconfont-social socicon-linkedin socicon"></span>
-
-
-                            <span class="p-1 mbr-iconfont mbr-iconfont-social socicon-facebook socicon"></span>
-
-                        <a href="https://plus.google.com/u/0/+Mobirise" target="_blank">
-
-                        </a>
-                        <a href="https://www.linkedin.com/in/mobirise" target="_blank">
-
-                        </a>
-                        <a href="https://www.instagram.com/mobirise/" target="_blank">
-
-                        </a>
-                        <a href="https://www.youtube.com/channel/UCt_tncVAetpK5JeM8L-8jyw" target="_blank">
-
-                        </a>
-                    </div>
-                </div>
-            </div></div>
+            </div>
+        </div>
     </div>
 </section>
 
@@ -893,9 +717,7 @@ function showPage() {
                                 <h5 class="align-left mbr-fonts-style display-5">
                                     Address:
                                 </h5>
-                                <p class="mbr-text align-left mbr-fonts-style display-7">Office Address: 257
-<br>SECTOR 29,
-<br>Faridabad, Haryana</p>
+                                <p class="mbr-text align-left mbr-fonts-style display-7">24A, SRS Corporate Tower,&nbsp;<br>Sector-31, Faridabad,&nbsp;&nbsp;<br>Haryana. &nbsp;Pin - 121003</p>
                             </div>
                         </div>
                     </div>
@@ -908,8 +730,7 @@ function showPage() {
                                 <h5 class="align-left mbr-fonts-style display-5">
                                     Phone:
                                 </h5>
-                                <p class="mbr-text align-left mbr-fonts-style display-7">Phone: 0129 Ph No.
-<br>Phone: 9650295204<br>Phone: 9899926405<br></p>
+                                <p class="mbr-text align-left mbr-fonts-style display-7">Phone: 0129 298 5370<br>Phone: 9650 295 204<br>Phone: 9899 926 405<br></p>
                             </div>
                         </div>
                     </div>
@@ -947,11 +768,12 @@ function showPage() {
     </div>
 </section>
 
-<section class="mbr-section form1 cid-rngsGAajAo" id="form1-b">
+<section class="mbr-section form1 cid-rngsGAajAo mbr-parallax-background" id="form1-b">
 
 
 
-
+    <div class="mbr-overlay" style="opacity: 0.8; background-color: rgb(193, 193, 193);">
+    </div>
     <div class="container">
         <div class="row justify-content-center">
             <div class="title col-12 col-lg-8">
@@ -965,8 +787,7 @@ function showPage() {
     <div class="container">
         <div class="row justify-content-center">
             <div class="media-container-column col-lg-8" data-form-type="formoid">
-                <!---Formbuilder Form--->
-                <form action="https://mobirise.com/" method="POST" class="mbr-form form-with-styler" data-form-title="Mobirise Form"><input type="hidden" name="email" data-form-email="true" value="I6btFTcOn3yduxSNTZ81fJIMf4c3FOXFSD+7CkT5tQo1VEKBbmzHVTHPQzWAuG/tgu9/PG8qnSTzg4AGVDglV27YiPVhZsbHyVKZaM4TDSFjxOkN7/Y+UtJ09+szdVSg">
+                <form action="https://wootz.in/" method="POST" class="mbr-form form-with-styler"><input type="hidden" name="email" data-form-email="true" value="6sjwUe0OTtw66X/SKvlJ7suqU80xzvH0ziaExtZS8iAnHeUKE+ncuz54c024im+sbWAjAUANlkMnQSnNjdXCjXAwhkn6PmtL6MFvWUQrzXKttUnb6AOR0xS9LZyPcFfj">
                     <div class="row row-sm-offset">
                         <div hidden="hidden" data-form-alert="" class="alert alert-success col-12">Thanks for filling out the form!</div>
                         <div hidden="hidden" data-form-alert-danger="" class="alert alert-danger col-12">
@@ -991,7 +812,7 @@ function showPage() {
                         </div>
                         <div class="col-md-12 input-group-btn align-center"><button type="submit" class="btn btn-primary btn-form display-4">SEND FORM</button></div>
                     </div>
-                </form><!---Formbuilder Form--->
+                </form>
             </div>
         </div>
     </div>
@@ -1001,7 +822,7 @@ function showPage() {
 
 
 
-    <div class="google-map"><iframe frameborder="0" style="border:0" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d224090.76384654432!2d76.95317999010548!3d28.647194764735694!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cfd5b347eb62d%3A0x37205b715389640!2sDelhi!5e0!3m2!1sen!2sin!4v1554921234833!5m2!1sen!2sin" allowfullscreen=""></iframe></div>
+    <div class="google-map"><iframe frameborder="0" style="border:0" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2659.908132176998!2d77.3091396013151!3d28.446985398863845!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cdd9d1afa347b%3A0x5f5e1765eb16251c!2sSRS+Tower!5e0!3m2!1sen!2sin!4v1555350064884!5m2!1sen!2sin" allowfullscreen=""></iframe></div>
 </section>
 
 <section class="cid-rngsuE901C" id="footer1-a">
@@ -1015,7 +836,7 @@ function showPage() {
             <div class="col-12 col-md-3">
                 <div class="media-wrap">
                     <a href="https://www.wootz.in/">
-                        <img src="assets/images/logo-final-png-278x240.png" alt="logo" title="">
+                        <img src="assets/images/logo-final-png-278x240.png" alt="logo"  style="height:160px;" draggable="false" style="-moz-user-select: none;">
                     </a>
                 </div>
             </div>
@@ -1023,19 +844,18 @@ function showPage() {
                 <h5 class="pb-3">
                     Address
                 </h5>
-                <p class="mbr-text">Office Address: 257
-<br>SECTOR 29,<br>Faridabad, Haryana</p>
+                <p class="mbr-text">24A, SRS Corporate Tower, Sector-31, Faridabad, Haryana</p>
             </div>
             <div class="col-12 col-md-3 mbr-fonts-style display-7">
                 <h5 class="pb-3">
                     Contacts
                 </h5>
                 <p class="mbr-text">
-                    Email: info@wootz.in<br>Phone: 0129 Ph No.<br>Phone: 9650295204<br><br></p>
+                    Email: info@wootz.in<br>Phone: 0129 298 5370<br>Phone: 9650 295 204<br><br></p>
             </div>
             <div class="col-12 col-md-3 mbr-fonts-style display-7">
                 <h5 class="pb-3">Services</h5>
-                <p class="mbr-text">Wootz BuildSys LLP has been incorporated to provide complete building construction solutions.&nbsp;</p>
+                <p class="mbr-text">Committed to delivering high quality projects and innovate design solutions</p>
             </div>
         </div>
         <div class="footer-lower">
@@ -1052,17 +872,17 @@ function showPage() {
                     <div class="social-list align-right">
                         <div class="soc-item">
                             <a href="https://facebook.com" target="_blank">
-                                <span class="mbr-iconfont mbr-iconfont-social socicon-facebook socicon"></span>
+                                <span class="mbr-iconfont mbr-iconfont-social socicon-facebook socicon" style="color: rgb(7, 46, 65); fill: rgb(7, 46, 65);"></span>
                             </a>
                         </div>
                         <div class="soc-item">
                             <a href="https://www.facebook.com/" target="_blank">
-                                <span class="mbr-iconfont mbr-iconfont-social socicon-instagram socicon"></span>
+                                <span class="mbr-iconfont mbr-iconfont-social socicon-instagram socicon" style="color: rgb(7, 46, 65); fill: rgb(7, 46, 65);"></span>
                             </a>
                         </div>
                         <div class="soc-item">
                             <a href="https://www.youtube.com/channel/UCJsHBDPVuhFjGM7dBCzHM7Q" target="_blank">
-                                <span class="mbr-iconfont mbr-iconfont-social socicon-youtube socicon"></span>
+                                <span class="mbr-iconfont mbr-iconfont-social socicon-youtube socicon" style="color: rgb(7, 46, 65); fill: rgb(7, 46, 65);"></span>
                             </a>
                         </div>
 
@@ -1075,7 +895,7 @@ function showPage() {
     </div>
 </section>
 
-<section once="footers" class="cid-rngsrG2Vek" id="footer6-9">
+<section once="footers" class="cid-rnqUfpuJWS" id="footer6-1t">
 
 
 
@@ -1085,13 +905,12 @@ function showPage() {
         <div class="media-container-row align-center mbr-white">
             <div class="col-12">
                 <p class="mbr-text mb-0 mbr-fonts-style display-7">
-                    © Copyright 2019  - All Rights Reserved
+                    © Copyright 2019 Wootz BuildSys - All Rights Reserved
                 </p>
             </div>
         </div>
     </div>
 </section>
-                                                                </div>
 
   <script src="assets/web/assets/jquery/jquery.min.js"></script>
   <script src="assets/popper/popper.min.js"></script>
@@ -1101,22 +920,30 @@ function showPage() {
   <script src="assets/touchswipe/jquery.touch-swipe.min.js"></script>
   <script src="assets/viewportchecker/jquery.viewportchecker.js"></script>
   <script src="assets/parallax/jarallax.min.js"></script>
-  <script src="assets/mbr-popup-btns/mbr-popup-btns.js"></script>
   <script src="assets/ytplayer/jquery.mb.ytplayer.min.js"></script>
   <script src="assets/vimeoplayer/jquery.mb.vimeo_player.js"></script>
+  <script src="assets/smoothscroll/smooth-scroll.js"></script>
   <script src="assets/bootstrapcarouselswipe/bootstrap-carousel-swipe.js"></script>
   <script src="assets/masonry/masonry.pkgd.min.js"></script>
   <script src="assets/imagesloaded/imagesloaded.pkgd.min.js"></script>
-  <script src="assets/smoothscroll/smooth-scroll.js"></script>
   <script src="assets/theme/js/script.js"></script>
   <script src="assets/gallery/player.min.js"></script>
   <script src="assets/gallery/script.js"></script>
   <script src="assets/slidervideo/script.js"></script>
   <script src="assets/formoid/formoid.min.js"></script>
-
-
- <div id="scrollToTop" class="scrollToTop mbr-arrow-up"><a style="text-align: center;"><i class="mbr-arrow-up-icon mbr-arrow-up-icon-cm cm-icon cm-icon-smallarrow-up"></i></a></div>
-    <input name="animation" type="hidden">
-                                                                                
+  <script type="text/javascript">window.$crisp=[];window.CRISP_WEBSITE_ID="94c2186b-c766-4d33-a63d-e250d32bf861";(function(){d=document;s=d.createElement("script");s.src="https://client.crisp.chat/l.js";s.async=1;d.getElementsByTagName("head")[0].appendChild(s);})();</script>
+  <!-- Google Analytics -->
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-138234610-1"></script>
+  <script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'UA-138234610-1');
+   </script>
+   <!-- /Google Analytics -->
+    
+  <div id="scrollToTop" class="scrollToTop mbr-arrow-up"><a style="text-align: center;"><i class="mbr-arrow-up-icon mbr-arrow-up-icon-cm cm-icon cm-icon-smallarrow-up"></i></a></div>
+  <input name="animation" type="hidden">
   </body>
 </html>
